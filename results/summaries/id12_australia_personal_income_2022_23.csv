@@ -1,0 +1,3 @@
+level,n,earners_mean,earners_sd,mean_income_mean,mean_income_sd,gini_mean,gini_sd,corr_earners_vs_mean_income,corr_mean_income_vs_gini
+state_territory,8,2149486.8,1902229.6,75022.6,7489.2,0.4744,0.0273,0.0400,-0.0690
+sa2,2346,7327.5,4090.8,73460.8,21648.6,0.4763,0.0623,0.1510,0.3770
