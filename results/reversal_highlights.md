@@ -73,3 +73,95 @@
 - **LGA（地方自治体地域）単位（546件）**: 相関係数 +0.283（州・準州単位よりやや強いプラスの相関）
 - **分類**: 符号は同じ（プラス）だが、大きさが大きく変化（+0.158 → +0.283、相対的におよそ8割増加）
 - **詳細・データ元**: `results/aggregation_effect_log.md` の「2026-07-20（11回目：id=11 オーストラリア・推計人口）」の項、要約統計量は `results/summaries/id11_australia_population_2025.csv` を参照。
+
+---
+
+## 2026-07-20: カナダ（id=12〜77） 世帯所得・世帯数に関する12変数の総当たり相関
+
+データ元: Statistics Canada Table 98-10-0057-01「Household income statistics by household type」（2021年国勢調査、州・準州単位 n=13 と 国勢細分区単位 n=5,161 の同一表）。12個の数値変数（総世帯数、単身/家族/非家族世帯数、世帯総所得・可処分所得の中央値など）の全組み合わせ66通りのうち、符号が逆転またはおおむね30%以上変化したものは以下35通り。
+
+- **分類の内訳**: reversed 27件、magnitude_change 8件、similar 31件（詳細全件は`results/summary_table.csv`のid=12〜77）。
+- **傾向**: 「世帯数」系の変数と「所得の中央値」系の変数の組み合わせのほとんどで、州・準州単位ではマイナスの弱い相関（-0.08〜-0.25程度）なのに、国勢細分区単位ではプラスの弱い相関（+0.03〜+0.12程度）に転じている。ただしいずれも絶対値0.3未満の弱い相関であり、「粗い単位でだけ見えている見かけの負の相関が、細かい単位では消えて符号が変わる」という典型的な生態学的相関（ecological correlation）の例と言える。
+
+<details><summary>該当ペア一覧（クリックで展開）</summary>
+
+| 変数の組み合わせ | 粗い単位の相関 | 細かい単位の相関 | 分類 |
+|---|---|---|---|
+| median_total_income_2015_total_cad と num_households_2021_1person | corr=-0.251 | corr=0.033 | magnitude_change |
+| median_total_income_2015_total_cad と num_households_2021_non_census_family | corr=-0.243 | corr=0.034 | magnitude_change |
+| median_total_income_2020_total_cad と num_households_2021_1person | corr=-0.176 | corr=0.043 | magnitude_change |
+| median_aftertax_income_2020_total_cad と num_households_2021_1person | corr=-0.181 | corr=0.040 | magnitude_change |
+| median_aftertax_income_2020_total_cad と num_households_2021_non_census_family | corr=-0.173 | corr=0.041 | magnitude_change |
+| median_aftertax_income_2015_total_cad と num_households_2021_1person | corr=-0.250 | corr=0.031 | magnitude_change |
+| median_total_income_2020_total_cad と num_households_2021_non_census_family | corr=-0.168 | corr=0.043 | magnitude_change |
+| median_aftertax_income_2015_total_cad と num_households_2021_non_census_family | corr=-0.242 | corr=0.032 | magnitude_change |
+| num_households_2021_1person と median_total_income_2020_census_family_cad | corr=-0.125 | corr=0.077 | reversed |
+| median_aftertax_income_2015_total_cad と num_households_2021_census_family | corr=-0.188 | corr=0.076 | reversed |
+| num_households_2021_1person と median_total_income_2020_non_census_family_cad | corr=-0.239 | corr=0.068 | reversed |
+| median_total_income_2020_1person_cad と num_households_2021_census_family | corr=-0.197 | corr=0.088 | reversed |
+| median_aftertax_income_2020_total_cad と num_households_2021_census_family | corr=-0.123 | corr=0.092 | reversed |
+| median_total_income_2020_1person_cad と num_households_2021_non_census_family | corr=-0.220 | corr=0.057 | reversed |
+| num_households_2021_census_family と median_total_income_2020_census_family_cad | corr=-0.084 | corr=0.122 | reversed |
+| num_households_2021_census_family と median_total_income_2020_non_census_family_cad | corr=-0.208 | corr=0.104 | reversed |
+| num_households_2021_1person と median_total_income_2020_1person_cad | corr=-0.222 | corr=0.057 | reversed |
+| median_total_income_2015_total_cad と num_households_2021_census_family | corr=-0.191 | corr=0.077 | reversed |
+| num_households_2021_total と median_total_income_2020_total_cad | corr=-0.136 | corr=0.075 | reversed |
+| median_total_income_2020_total_cad と num_households_2021_census_family | corr=-0.119 | corr=0.094 | reversed |
+| num_households_2016_total と median_total_income_2020_non_census_family_cad | corr=-0.219 | corr=0.089 | reversed |
+| num_households_2016_total と median_total_income_2020_census_family_cad | corr=-0.097 | corr=0.103 | reversed |
+| num_households_2016_total と median_total_income_2020_1person_cad | corr=-0.206 | corr=0.075 | reversed |
+| num_households_2016_total と median_aftertax_income_2015_total_cad | corr=-0.208 | corr=0.076 | reversed |
+| num_households_2016_total と median_aftertax_income_2020_total_cad | corr=-0.141 | corr=0.071 | reversed |
+| num_households_2016_total と median_total_income_2015_total_cad | corr=-0.210 | corr=0.078 | reversed |
+| num_households_2016_total と median_total_income_2020_total_cad | corr=-0.137 | corr=0.073 | reversed |
+| num_households_2021_total と median_total_income_2020_non_census_family_cad | corr=-0.218 | corr=0.091 | reversed |
+| num_households_2021_total と median_total_income_2020_census_family_cad | corr=-0.096 | corr=0.105 | reversed |
+| num_households_2021_total と median_total_income_2020_1person_cad | corr=-0.205 | corr=0.077 | reversed |
+| num_households_2021_total と median_aftertax_income_2015_total_cad | corr=-0.207 | corr=0.059 | reversed |
+| num_households_2021_total と median_aftertax_income_2020_total_cad | corr=-0.140 | corr=0.073 | reversed |
+| num_households_2021_total と median_total_income_2015_total_cad | corr=-0.209 | corr=0.061 | reversed |
+| median_total_income_2020_census_family_cad と num_households_2021_non_census_family | corr=-0.119 | corr=0.077 | reversed |
+| num_households_2021_non_census_family と median_total_income_2020_non_census_family_cad | corr=-0.236 | corr=0.069 | reversed |
+
+</details>
+
+---
+
+## 2026-07-20: オーストラリア（id=78〜113） 人口動態・面積・人口密度に関する9変数の総当たり相関
+
+データ元: ABS「Regional Population, 2024–25」datacube 32180DS0002（州・準州単位 n=9 と LGA=地方自治体地域単位 n=544、いずれも2024〜2025年会計年度・同一発表）。9個の数値変数（推計人口2024/2025、人口増減数・増減率、自然増加、純国内移動、純海外移動、面積、人口密度）の全組み合わせ36通りのうち、符号が逆転またはおおむね30%以上変化したものは以下25通り。
+
+- **分類の内訳**: reversed 12件、magnitude_change 13件、similar 11件（詳細全件は`results/summary_table.csv`のid=78〜113）。
+- **傾向**: 特に「面積(area_km2)」や「人口密度」が絡む組み合わせでほぼ全て符号が逆転している。例えば人口増減率と面積の相関は、州単位では+0.719という強い正の相関に見えるが、LGA単位では-0.126という弱い負の相関に転じる。州単位ではオーストラリア特有の「面積が広い州（西オーストラリア・北部準州など）ほど人口増加率が高い資源ブーム地域を含む」という少数の州の影響を強く受けるが、LGA単位まで細かく見ると、都市部の小さく高密度なLGAでも高い人口増加率を示すところが多数あるため、この関係が消えて逆転する。集計単位を粗くすることで少数の外れ値（州）が全体の相関を支配してしまう典型例。
+
+<details><summary>該当ペア一覧（クリックで展開）</summary>
+
+| 変数の組み合わせ | 粗い単位の相関 | 細かい単位の相関 | 分類 |
+|---|---|---|---|
+| ERP_2024 と ERP_change_pct | corr=0.480 | corr=0.280 | magnitude_change |
+| net_internal_migration と population_density_2025 | corr=-0.082 | corr=-0.413 | magnitude_change |
+| net_internal_migration と area_km2 | corr=0.459 | corr=-0.003 | magnitude_change |
+| net_internal_migration と net_overseas_migration | corr=-0.193 | corr=-0.385 | magnitude_change |
+| ERP_change_pct と population_density_2025 | corr=-0.009 | corr=0.162 | magnitude_change |
+| ERP_change_pct と net_overseas_migration | corr=0.543 | corr=0.237 | magnitude_change |
+| ERP_change_no と net_internal_migration | corr=0.043 | corr=0.240 | magnitude_change |
+| ERP_change_no と ERP_change_pct | corr=0.649 | corr=0.453 | magnitude_change |
+| ERP_change_pct と natural_increase | corr=0.544 | corr=0.371 | magnitude_change |
+| ERP_2025 と net_internal_migration | corr=-0.208 | corr=-0.087 | magnitude_change |
+| ERP_2025 と ERP_change_pct | corr=0.483 | corr=0.284 | magnitude_change |
+| ERP_2024 と net_internal_migration | corr=-0.211 | corr=-0.094 | magnitude_change |
+| area_km2 と population_density_2025 | corr=-0.455 | corr=-0.129 | magnitude_change |
+| ERP_2025 と area_km2 | corr=0.202 | corr=-0.128 | reversed |
+| ERP_change_no と area_km2 | corr=0.315 | corr=-0.107 | reversed |
+| ERP_change_no と population_density_2025 | corr=-0.246 | corr=0.231 | reversed |
+| net_overseas_migration と population_density_2025 | corr=-0.238 | corr=0.476 | reversed |
+| ERP_change_pct と area_km2 | corr=0.719 | corr=-0.126 | reversed |
+| natural_increase と net_internal_migration | corr=-0.199 | corr=0.096 | reversed |
+| natural_increase と area_km2 | corr=0.161 | corr=-0.085 | reversed |
+| natural_increase と population_density_2025 | corr=-0.179 | corr=0.244 | reversed |
+| ERP_2024 と population_density_2025 | corr=-0.245 | corr=0.318 | reversed |
+| ERP_2024 と area_km2 | corr=0.200 | corr=-0.128 | reversed |
+| net_overseas_migration と area_km2 | corr=0.216 | corr=-0.103 | reversed |
+| ERP_2025 と population_density_2025 | corr=-0.245 | corr=0.317 | reversed |
+
+</details>
