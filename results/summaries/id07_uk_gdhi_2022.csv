@@ -1,0 +1,3 @@
+level,unit_name,n,variable,mean,sd,other_variable,other_mean,other_sd,correlation
+ITL1_region,"North East/North West/Yorkshire and The Humber/East Midlands/West Midlands/East/London/South East/South West/Wales/Scotland/Northern Ireland",12,population_2022,5633563.42,2202545.14,gdhi_per_head_2022_gbp,21759.17,3931.30,0.7464
+local_authority,"361 UK local authorities (England/Wales/Scotland/Northern Ireland)",361,population_2022,187267.20,126884.34,gdhi_per_head_2022_gbp,23308.46,9292.67,-0.0825
