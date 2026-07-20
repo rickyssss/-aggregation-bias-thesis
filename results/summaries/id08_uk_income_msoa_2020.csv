@@ -1,0 +1,3 @@
+level,n,variable,mean_gbp,std_gbp,cv,min_gbp,max_gbp,max_min_ratio
+ITL1_region_England_Wales,10,GDHI per head of population (2020),20308,3777,0.186,17211,29162,1.694
+MSOA,7201,Total annual household income FYE2020 (model-based mean estimate),46446,11147,0.240,22200,108100,4.869
