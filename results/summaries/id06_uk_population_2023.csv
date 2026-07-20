@@ -1,0 +1,3 @@
+level,n,pop_mean,pop_stdev,aging_rate65_mean_pct,aging_rate65_stdev_pct,corr_pop_vs_aging_rate65
+region_incl_wales,10,6085472.7,2087835.4,19.37,2.66,-0.582
+lsoa,35672,1712.8,396.5,19.41,8.86,-0.309
