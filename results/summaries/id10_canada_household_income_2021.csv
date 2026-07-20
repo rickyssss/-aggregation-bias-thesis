@@ -1,0 +1,3 @@
+level,n,household_count_mean,household_count_sd,median_income_mean_cad,median_income_sd_cad,corr_household_count_vs_median_income
+province_territory,13,1152226.2,1631622.3,87500.0,17696.2,-0.1358
+census_subdivision,3660,4077.1,30207.0,74905.1,18711.6,0.0748

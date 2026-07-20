@@ -2,3 +2,4 @@ id,country,variable,coarse_level,coarse_stat,fine_level,fine_stat,diff_type,note
 1,日本,人口と高齢化率の相関,都道府県(n=47),corr=-0.688,市区町村(n=1740),corr=-0.323,magnitude_change,符号は同じ(マイナス)だが強さがおよそ半減
 4,アメリカ,人口と人口増減率の相関,州+DC(n=52),corr=0.094,郡(n=3144),corr=0.099,similar,符号・強さともにほぼ変化なし
 5,アメリカ,人口と一人当たり個人所得の相関,州+DC(n=51),corr=0.140,郡(n=3115),corr=0.216,magnitude_change,符号は同じ(プラス)だが強さが5割ほど増加
+10,カナダ,世帯数と世帯所得中央値の相関,州・準州(n=13),corr=-0.136,国勢調査細分区域(n=3660),corr=0.075,reversed,符号がマイナスからプラスへ逆転したが両方とも0に近い弱い相関
