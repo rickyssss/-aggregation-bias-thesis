@@ -1,0 +1,3 @@
+level,n,pop_mean,pop_stdev,pop_cv,aging_rate_mean,aging_rate_stdev,corr_pop_vs_aging_rate
+prefecture,47,2683959.55,2796581.56,1.042,0.3026,0.0320,-0.688
+municipality,1740,72497.76,190783.53,2.632,0.3475,0.0793,-0.323
