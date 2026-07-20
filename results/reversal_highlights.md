@@ -165,3 +165,69 @@
 | ERP_2025 と population_density_2025 | corr=-0.245 | corr=0.317 | reversed |
 
 </details>
+
+---
+
+## 2026-07-20: フランス（id=114〜191） 所得・貧困率・世帯構成に関する13変数の総当たり相関
+
+データ元: INSEE「Dossier complet」(id=2011101)から抽出した県(département)単位 n=98 とコミューン(commune)単位 n=34,804 の所得・貧困関連指標。13個の数値変数の全組み合わせ78通りのうち、符号が逆転またはおおむね30%以上変化したものは以下50通り。
+
+- **分類の内訳**: reversed 5件、magnitude_change 45件、similar 28件（詳細全件は`results/summary_table.csv`のid=114〜191）。
+- **傾向**: 符号自体が逆転する例は少ない（5件）が、大きさが変化する例(magnitude_change)が全体の6割近くと非常に多い。特に「所得の低い層（第1十分位）の所得水準」と「所得構成の割合（賃金・年金・社会給付・税など）」の組み合わせで、県単位よりコミューン単位のほうが相関がずっと強く出る傾向が目立つ（例: 第1十分位所得と課税世帯割合の相関は県単位+0.452→コミューン単位+0.808）。これは、県という広域単位では都市と農村・裕福な地域と貧しい地域が混ざって平均化されてしまい、コミューン単位まで細分化して初めて所得構成の違いがはっきり見える例と考えられる。符号が逆転した5件はいずれも「年金の割合」または「社会給付の割合」が絡む変数で、値そのものは弱い相関(|r|<0.25)同士の逆転である。
+
+<details><summary>該当ペア一覧（クリックで展開）</summary>
+
+| 変数の組み合わせ | 粗い単位の相関 | 細かい単位の相関 | 分類 |
+|---|---|---|---|
+| num_persons_fiscal_households と median_living_standard_eur | corr=0.459 | corr=0.007 | magnitude_change |
+| d1_living_standard_eur と share_taxed_households_pct | corr=0.452 | corr=0.808 | magnitude_change |
+| d1_living_standard_eur と share_activity_income_pct | corr=0.111 | corr=0.491 | magnitude_change |
+| d1_living_standard_eur と share_wages_pct | corr=0.171 | corr=0.485 | magnitude_change |
+| d1_living_standard_eur と share_direct_taxes_pct | corr=-0.080 | corr=-0.563 | magnitude_change |
+| d9_living_standard_eur と poverty_rate_pct_60med | corr=-0.193 | corr=-0.440 | magnitude_change |
+| d9_living_standard_eur と share_activity_income_pct | corr=0.735 | corr=0.408 | magnitude_change |
+| d9_living_standard_eur と share_wages_pct | corr=0.693 | corr=0.368 | magnitude_change |
+| d9_living_standard_eur と share_pensions_pct | corr=-0.648 | corr=-0.281 | magnitude_change |
+| interdecile_ratio_d9_d1 と share_taxed_households_pct | corr=0.434 | corr=0.032 | magnitude_change |
+| d1_living_standard_eur と d9_living_standard_eur | corr=0.133 | corr=0.511 | magnitude_change |
+| interdecile_ratio_d9_d1 と share_activity_income_pct | corr=0.621 | corr=0.044 | magnitude_change |
+| interdecile_ratio_d9_d1 と share_pensions_pct | corr=-0.675 | corr=-0.145 | magnitude_change |
+| interdecile_ratio_d9_d1 と share_direct_taxes_pct | corr=-0.776 | corr=-0.397 | magnitude_change |
+| poverty_rate_pct_60med と share_activity_income_pct | corr=-0.114 | corr=-0.373 | magnitude_change |
+| poverty_rate_pct_60med と share_wages_pct | corr=-0.174 | corr=-0.367 | magnitude_change |
+| poverty_rate_pct_60med と share_direct_taxes_pct | corr=0.181 | corr=0.502 | magnitude_change |
+| share_taxed_households_pct と share_pensions_pct | corr=-0.538 | corr=-0.309 | magnitude_change |
+| share_activity_income_pct と share_social_benefits_pct | corr=-0.198 | corr=-0.338 | magnitude_change |
+| share_activity_income_pct と share_direct_taxes_pct | corr=-0.770 | corr=-0.503 | magnitude_change |
+| share_wages_pct と share_direct_taxes_pct | corr=-0.722 | corr=-0.444 | magnitude_change |
+| interdecile_ratio_d9_d1 と share_wages_pct | corr=0.548 | corr=0.006 | magnitude_change |
+| median_living_standard_eur と interdecile_ratio_d9_d1 | corr=0.484 | corr=0.290 | magnitude_change |
+| median_living_standard_eur と share_pensions_pct | corr=-0.458 | corr=-0.318 | magnitude_change |
+| num_households と median_living_standard_eur | corr=0.485 | corr=0.004 | magnitude_change |
+| num_persons_fiscal_households と d1_living_standard_eur | corr=-0.053 | corr=-0.164 | magnitude_change |
+| num_persons_fiscal_households と d9_living_standard_eur | corr=0.550 | corr=0.065 | magnitude_change |
+| num_persons_fiscal_households と interdecile_ratio_d9_d1 | corr=0.537 | corr=0.241 | magnitude_change |
+| num_persons_fiscal_households と poverty_rate_pct_60med | corr=0.026 | corr=0.145 | magnitude_change |
+| num_persons_fiscal_households と share_taxed_households_pct | corr=0.562 | corr=-0.009 | magnitude_change |
+| num_persons_fiscal_households と share_activity_income_pct | corr=0.697 | corr=0.064 | magnitude_change |
+| num_persons_fiscal_households と share_wages_pct | corr=0.685 | corr=0.053 | magnitude_change |
+| num_persons_fiscal_households と share_pensions_pct | corr=-0.697 | corr=-0.093 | magnitude_change |
+| num_persons_fiscal_households と share_direct_taxes_pct | corr=-0.638 | corr=-0.104 | magnitude_change |
+| median_living_standard_eur と d1_living_standard_eur | corr=0.548 | corr=0.788 | magnitude_change |
+| share_pensions_pct と share_direct_taxes_pct | corr=0.629 | corr=0.249 | magnitude_change |
+| num_households と d9_living_standard_eur | corr=0.577 | corr=0.063 | magnitude_change |
+| num_households と interdecile_ratio_d9_d1 | corr=0.557 | corr=0.232 | magnitude_change |
+| num_households と poverty_rate_pct_60med | corr=0.001 | corr=0.133 | magnitude_change |
+| num_households と share_taxed_households_pct | corr=0.562 | corr=-0.011 | magnitude_change |
+| num_households と share_activity_income_pct | corr=0.666 | corr=0.047 | magnitude_change |
+| num_households と share_wages_pct | corr=0.648 | corr=0.035 | magnitude_change |
+| num_households と share_pensions_pct | corr=-0.660 | corr=-0.071 | magnitude_change |
+| num_households と share_direct_taxes_pct | corr=-0.660 | corr=-0.100 | magnitude_change |
+| num_households と d1_living_standard_eur | corr=-0.041 | corr=-0.156 | magnitude_change |
+| num_persons_fiscal_households と share_social_benefits_pct | corr=-0.066 | corr=0.113 | reversed |
+| poverty_rate_pct_60med と share_pensions_pct | corr=-0.151 | corr=0.079 | reversed |
+| d1_living_standard_eur と share_pensions_pct | corr=0.121 | corr=-0.230 | reversed |
+| num_households と share_social_benefits_pct | corr=-0.104 | corr=0.100 | reversed |
+| share_pensions_pct と share_social_benefits_pct | corr=-0.071 | corr=0.076 | reversed |
+
+</details>
