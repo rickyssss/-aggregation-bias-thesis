@@ -1,0 +1,3 @@
+level,n,pop_mean,pop_sd,growth_pct_mean,growth_pct_sd,corr_pop_vs_growth_pct
+state_plus_dc,52,6634033,7573746,2.83,3.07,0.094
+county,3144,108710,339143,1.64,5.71,0.099
