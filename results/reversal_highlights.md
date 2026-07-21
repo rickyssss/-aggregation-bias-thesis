@@ -426,3 +426,19 @@
 
 - **reversed（符号逆転）**: 54件 / **magnitude_change（大きさが大きく変化）**: 197件 / **similar（ほぼ同様）**: 127件（合計378件）
 - `similar`と判定された全件も`results/summary_table.csv`（id=3772〜4149）に記録済みです。
+
+---
+
+## 2026-07-21: ノルウェーの女性割合と移民割合の関係の逆転（summary_table id=4160）
+
+- **変数**: 「女性の割合（人口1000人あたり）」 vs 「移民数（人口1000人あたり）」
+- **県(fylke)単位（19件）**: corr=0.697（正の相関、有意）
+- **市町村(kommune)単位（386件）**: corr=-0.117（負の相関、有意）
+- **意味**: 19の県単位では「女性の割合が高い県ほど移民の割合も高い」という比較的強い正の関係に見えますが、386の市町村まで細かく見ると、弱いながらも統計的に有意な逆の関係が現れます。
+- **注意**: 男性割合と女性割合はほぼ相補的な変数のため、他の変数との相関は符号が反転して対になって現れます。
+- **詳細・データ元**: `results/aggregation_effect_log.md`の「2026-07-21（新規データ源：ノルウェー Statistics Norway (SSB) StatBank）」の項を参照。データ元はStatistics Norway StatBank PxWeb v2-beta API（表11818/11820、登録不要）。
+
+## 2026-07-21: ノルウェーSSB 171組み合わせの内訳（reversed/magnitude_change/similarすべて記録）
+
+- **reversed（符号逆転）**: 31件 / **magnitude_change（大きさが大きく変化）**: 128件 / **similar（ほぼ同様）**: 12件（合計171件）
+- `similar`と判定された全件も`results/summary_table.csv`（id=4150〜4320）に記録済みです。
