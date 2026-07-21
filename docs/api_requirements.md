@@ -20,3 +20,4 @@
 
 - Eurostat API（EU、`https://ec.europa.eu/eurostat/api/dissemination/...`）: 登録不要。
 - BLS Public Data API v2（アメリカ、`https://api.bls.gov/publicAPI/v2/...`）: 登録不要だが、未登録時は1日25クエリ・1クエリ25系列までの制限あり。
+- アイルランドCSO PxStat API（`https://ws.cso.ie/public/api.jsonrpc/PxStat.Data.Cube_API.ReadDataset`、2026-07-21確認）: 表一覧を検索するREST版`/public/api.restful/PxStat.Data.Cube_API.ReadCollection/en`は継続してHTTP 500で使えないが、個別の統計表コード（F1011、F2095など、CSOのWebリリースページに掲載）を直接指定してJSON-RPC版`ReadDataset`をPOSTで呼べば正常にJSON-stat2形式が返ることを確認済み。表コードはWebSearch/WebFetchでCSOの各Census 2022テーマの「Data」ページ（例: `https://www.cso.ie/en/releasesandpublications/ep/p-cpp2/censusofpopulation2022profile2-housinginireland/data/`）から探すこと。ドイツregionalstatistik.deのGENESIS-OnlineゲストアカウントもPOST方式の`logincheck`は成功するが、`find`や`catalogue`系エンドポイントはゲスト権限では「Code 15」エラーで使えなかった（2026-07-21確認、要ログイン権限の高いアカウント）。
