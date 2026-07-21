@@ -1,0 +1,3 @@
+level,n,pop2018_mean,pop2018_sd,pop2018_min,pop2018_max,growth_pct_mean,growth_pct_sd,growth_pct_min,growth_pct_max,corr_pop2018_growth
+NUTS2,292,1942136,1878917,29489,15029231,0.914,4.121,-11.814,19.481,0.1009
+NUTS3,1374,409502,636943,10847,15029231,-0.057,4.361,-21.648,19.481,0.1945
