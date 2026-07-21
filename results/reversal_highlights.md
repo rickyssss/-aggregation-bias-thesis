@@ -478,3 +478,14 @@
 - **注目例2（老年従属人口指数 vs 平均賃金の相対水準）**: voivodeship単位corr=-0.251(有意でない) → powiat単位corr=+0.225(有意)、符号が逆転。
 - **大きさが縮小した例（人口1000人あたり純移動数 vs 平均賃金の相対水準）**: voivodeship単位corr=+0.818(有意) → powiat単位corr=+0.155(有意でない)、符号は同じだが強い正の関係がほぼ消失。
 - `similar`と判定された全件も含め`results/summary_table.csv`（id=4727〜4781）に記録済み。詳細は`results/summaries/id4727_4781_poland_bdl_pairwise.csv`、経緯は`results/aggregation_effect_log.md`の該当項を参照。
+
+---
+
+## 2026-07-21: ポルトガルINE 300組み合わせの内訳（reversed/magnitude_change/similarすべて記録）
+
+- **reversed（符号逆転）**: 3件 / **magnitude_change（大きさが大きく変化）**: 39件 / **similar（ほぼ同様）**: 258件（合計300件）
+- **注目例1（男女比 vs 50〜54歳人口の割合）**: NUTS3(25地域)単位corr=-0.417(有意) → 市区町村(308地域)単位corr=+0.008(ほぼゼロ、有意でない)。符号は僅かに反転しているが、それ以上に「有意な関係」が「無関係」に変わった点が特徴的。
+- **注目例2（15〜19歳割合 vs 55〜59歳割合）**: NUTS3単位corr=+0.284(有意でない) → 市区町村単位corr=-0.066(有意でない)、符号は逆転しているがどちらも有意でないため誤差の範囲内の可能性が高い。
+- **大きさが縮小した例（50〜54歳割合 vs 55〜59歳割合）**: NUTS3単位corr=0.63(有意) → 市区町村単位corr=0.376(有意)、正の関係を保ったまま強さが約4割縮小。
+- **頑健(similar)だった例（人口増減率 vs 老年従属人口指数）**: NUTS3単位corr=-0.603(有意) → 市区町村単位corr=-0.669(有意)、ほぼ同じ強さで「人口減少地域ほど高齢化が進む」という関係が単位によらず成り立つ。
+- `similar`と判定された全件も含め`results/summary_table.csv`（id=4782〜5081）に記録済み。詳細は`results/summaries/id4782_5081_portugal_ine_pairwise.csv`、経緯は`results/aggregation_effect_log.md`の該当項を参照。

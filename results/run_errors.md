@@ -13,3 +13,12 @@
   - `https://sdmx.istat.it/SDMXWS/rest/dataflow/IT1`: HTTP 302リダイレクトの末、プレーンHTTPの`http://avvisi.istat.it/`（お知らせページ、おそらくメンテナンス通知）に転送され、プロキシがHTTPS以外のCONNECTトンネルを許可しないため取得不可（405エラー）。
   - `https://servizi.istat.it/SDMXWS/rest/dataflow`: プロキシのCONNECTトンネルが502で失敗。
 - **対応**: 候補5は今回見送り、候補6（スペインINEbase）に進んだ。スペインのwstempus API（`servicios.ine.es`）は正常に接続できたため、そちらを優先して処理した。イタリアは次回以降、別のドメイン（`sdmx.istat.it`のリダイレクト解消待ちや、Eurostat経由でイタリアのNUTS3データを取得する代替案）を試すこと。
+
+## 2026-07-21: アイルランドCSO・ドイツregionalstatistik・チェコČSÚを試したが接続失敗、ポルトガルINEに切り替えて成功
+
+- **状況**: 候補1〜6(カナダ・フィンランド・ノルウェー・スウェーデン・イタリア・スペイン)がすべて処理済みだったため、候補7「新しい国・データ源を自分で探す」として、まずアイルランド・ドイツ・チェコを試した。
+  - アイルランドCSO PxStat API（`https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadCollection/en`）: HTTP 500「InternalServerError」。`Accept: application/json`ヘッダを付けても同じ。
+  - ドイツ regionalstatistik.de GENESIS-Online API（`https://www.regionalstatistik.de/genesisws/rest/2020/helloworld/logincheck?username=GAST&password=GAST`、ゲストアカウント）: HTTP 405 Method Not Allowed（GETでは呼べない可能性、POST等の別方式が必要と思われる）。
+  - チェコ ČSÚ VDB API（`https://vdb.czso.cz/pll/eweb/package_show?id=130141-24`）: HTTP 200だが`{"success": false, "error": {"message": "Dataset Not Found"}}`（データセットIDが不正または存在しない）。
+- **対応**: 3つとも今回は見送り、代わりにポルトガル国家統計院(INE)の指標API（`https://www.ine.pt/ine/json_indicador/pindica.jsp`）を試したところ正常に応答したため、そちらを採用した（NUTS3 vs 市区町村、詳細は`results/aggregation_effect_log.md`参照）。
+- **今後の課題**: アイルランドは時間を置いて再試行（一時的なサーバー障害の可能性）、ドイツはGENESIS-OnlineのREST APIドキュメントを確認しPOSTリクエストや別のログイン方式を試す、チェコは正しいデータセットID(パッケージ名)をVDBのカタログ検索エンドポイントから探すこと。
