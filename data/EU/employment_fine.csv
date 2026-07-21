@@ -1,0 +1,1199 @@
+geo_code,geo_name,employed_persons_thousand,population
+AT111,Mittelburgenland,14.4,37524
+AT112,Nordburgenland,72.9,162880
+AT113,Südburgenland,41.6,97179
+AT121,Mostviertel-Eisenwurzen,109.8,248164
+AT122,Niederösterreich-Süd,112.3,263484
+AT123,Sankt Pölten,90.2,158066
+AT124,Waldviertel,98.8,215650
+AT125,Weinviertel,40.1,126272
+AT126,Wiener Umland/Nordteil,122.6,338001
+AT127,Wiener Umland/Südteil,189.6,349159
+AT130,Wien,1107.1,1931593
+AT211,Klagenfurt-Villach,154.7,292945
+AT212,Oberkärnten,51.9,123469
+AT213,Unterkärnten,65.5,148099
+AT221,Graz,292.8,453042
+AT222,Liezen,40.2,79609
+AT223,Östliche Obersteiermark,73.6,157373
+AT224,Oststeiermark,126.9,266130
+AT225,West- und Südsteiermark,83.1,198271
+AT226,Westliche Obersteiermark,42.8,98497
+AT311,Innviertel,141,293141
+AT312,Linz-Wels,383.6,601998
+AT313,Mühlviertel,82.4,211657
+AT314,Steyr-Kirchdorf,76,156593
+AT315,Traunviertel,113.9,241751
+AT321,Lungau,10.2,20159
+AT322,Pinzgau-Pongau,92.4,170352
+AT323,Salzburg und Umgebung,224,372095
+AT331,Außerfern,18.1,33284
+AT332,Innsbruck,185.2,313503
+AT333,Osttirol,26.2,48818
+AT334,Tiroler Oberland,55.8,106037
+AT335,Tiroler Unterland,143.9,262460
+AT341,Bludenz-Bregenzer Wald,49.3,93293
+AT342,Rheintal-Bodenseegebiet,156.3,308381
+BE100,Arr. de Bruxelles-Capitale/Arr. Brussel-Hoofdstad,720.1,1228655
+BE211,Arr. Antwerpen,509.2,1067117
+BE212,Arr. Mechelen,164.9,351562
+BE213,Arr. Turnhout,208.8,471948
+BE223,Arr. Tongeren,66,207436
+BE224,Arr. Hasselt,212.2,425762
+BE225,Arr. Maaseik,95.3,255715
+BE231,Arr. Aalst,95,298743
+BE232,Arr. Dendermonde,66.7,204378
+BE233,Arr. Eeklo,30.8,87576
+BE234,Arr. Gent,323.2,569089
+BE235,Arr. Oudenaarde,45.7,126000
+BE236,Arr. Sint-Niklaas,109.9,259683
+BE241,Arr. Halle-Vilvoorde,296.3,656399
+BE242,Arr. Leuven,205,517557
+BE251,Arr. Brugge,135.9,283997
+BE252,Arr. Diksmuide,18.8,51992
+BE253,Arr. Ieper,48.1,107320
+BE254,Arr. Kortrijk,149.9,296179
+BE255,Arr. Oostende,54.4,158339
+BE256,Arr. Roeselare,84.4,156426
+BE257,Arr. Tielt,45,94528
+BE258,Arr. Veurne,25.9,62041
+BE310,Arr. Nivelles,177.8,410619
+BE323,Arr. Mons,87.4,260350
+BE328,Arr. Tournai-Mouscron,94,225948
+BE329,Arr. La Louvière,41.4,141914
+BE32A,Arr. Ath,39.7,129495
+BE32B,Arr. Charleroi,139.4,397731
+BE32C,Arr. Soignies,32.4,106686
+BE32D,Arr. Thuin,26.8,92543
+BE331,Arr. Huy,37.9,115082
+BE332,Arr. Liège,251,628067
+BE334,Arr. Waremme,23,83088
+BE335,Arr. Verviers — communes francophones,74.8,210811
+BE336,Bezirk Verviers — Deutschsprachige Gemeinschaft,29.1,79039
+BE341,Arr. Arlon,20.7,64937
+BE342,Arr. Bastogne,15.8,50896
+BE343,Arr. Marche-en-Famenne,24.7,58388
+BE344,Arr. Neufchâteau,26.7,65358
+BE345,Arr. Virton,13.9,54821
+BE351,Arr. Dinant,36.8,113877
+BE352,Arr. Namur,127.7,321698
+BE353,Arr. Philippeville,18.6,67833
+BG311,Vidin,29.25,74237
+BG312,Montana,50.22,118113
+BG313,Vratsa,59.44,151030
+BG314,Pleven,95.04,223510
+BG315,Lovech,51.72,115146
+BG321,Veliko Tarnovo,94.44,206395
+BG322,Gabrovo,53.88,97408
+BG323,Ruse,97.82,192314
+BG324,Razgrad,45.89,102029
+BG325,Silistra,43.29,96826
+BG331,Varna,211.94,431203
+BG332,Dobrich,68.48,149003
+BG333,Shumen,72.28,150415
+BG334,Targovishte,48.58,97019
+BG341,Burgas,186.4,379023
+BG342,Sliven,72.85,171495
+BG343,Yambol,51.6,108654
+BG344,Stara Zagora,143.52,294469
+BG411,Sofia (stolitsa),982.29,1274538
+BG412,Sofia,97.55,230160
+BG413,Blagoevgrad,149.29,290216
+BG414,Pernik,42.3,113283
+BG415,Kyustendil,48.17,110303
+BG421,Plovdiv,335.06,631760
+BG422,Haskovo,97.89,210364
+BG423,Pazardzhik,97.26,227625
+BG424,Smolyan,51.57,95152
+BG425,Kardzhali,66.39,140794
+CY000,Kýpros,482.51,929764
+CZ010,Hlavní město Praha,946.13,1275406
+CZ020,Středočeský kraj,621.62,1386824
+CZ031,Jihočeský kraj,305.78,637047
+CZ032,Plzeňský kraj,292.67,578707
+CZ041,Karlovarský kraj,126.43,283210
+CZ042,Ústecký kraj,356.01,798898
+CZ051,Liberecký kraj,202.54,437570
+CZ052,Královéhradecký kraj,260.59,542583
+CZ053,Pardubický kraj,245.83,514518
+CZ063,Kraj Vysočina,247.99,504025
+CZ064,Jihomoravský kraj,606.04,1184568
+CZ071,Olomoucký kraj,291.9,622930
+CZ072,Zlínský kraj,278.17,572432
+CZ080,Moravskoslezský kraj,551.39,1177989
+DE111,"Stuttgart, Stadtkreis",543.89,626275
+DE112,Böblingen,226.69,393195
+DE113,Esslingen,283.03,533388
+DE114,Göppingen,118.65,259046
+DE115,Ludwigsburg,268.63,544679
+DE116,Rems-Murr-Kreis,205.32,427316
+DE117,"Heilbronn, Stadtkreis",98.93,125613
+DE118,"Heilbronn, Landkreis",183.38,347798
+DE119,Hohenlohekreis,74.8,113318
+DE11A,Schwäbisch Hall,114.35,199398
+DE11B,Main-Tauber-Kreis,75.8,132956
+DE11C,Heidenheim,68.55,132958
+DE11D,Ostalbkreis,172.98,315009
+DE121,"Baden-Baden, Stadtkreis",42.2,55527
+DE122,"Karlsruhe, Stadtkreis",238.59,306502
+DE123,"Karlsruhe, Landkreis",217.88,448487
+DE124,Rastatt,117,232296
+DE125,"Heidelberg, Stadtkreis",127.02,159245
+DE126,"Mannheim, Stadtkreis",244.88,311831
+DE127,Neckar-Odenwald-Kreis,66.87,143929
+DE128,Rhein-Neckar-Kreis,244.9,549030
+DE129,"Pforzheim, Stadtkreis",77.2,125529
+DE12A,Calw,68.35,160686
+DE12B,Enzkreis,85.68,200237
+DE12C,Freudenstadt,64.67,119183
+DE131,"Freiburg im Breisgau, Stadtkreis",184.31,231848
+DE132,Breisgau-Hochschwarzwald,120.83,265792
+DE133,Emmendingen,78.39,167945
+DE134,Ortenaukreis,251.23,434535
+DE135,Rottweil,77.45,140446
+DE136,Schwarzwald-Baar-Kreis,119.05,213385
+DE137,Tuttlingen,87.8,142414
+DE138,Konstanz,149.06,288097
+DE139,Lörrach,106.29,229445
+DE13A,Waldshut,76.27,171249
+DE141,Reutlingen,156.22,288158
+DE142,"Tübingen, Landkreis",122.21,229806
+DE143,Zollernalbkreis,97.04,190545
+DE144,"Ulm, Stadtkreis",130.2,126949
+DE145,Alb-Donau-Kreis,81.89,199732
+DE146,Biberach,117.13,203244
+DE147,Bodenseekreis,126.45,218885
+DE148,Ravensburg,170.14,287011
+DE149,Sigmaringen,70.08,131725
+DE211,"Ingolstadt, Kreisfreie Stadt",124.94,138016
+DE212,"München, Kreisfreie Stadt",1182.56,1487708
+DE213,"Rosenheim, Kreisfreie Stadt",50.44,63508
+DE214,Altötting,65.5,112116
+DE215,Berchtesgadener Land,55.74,106389
+DE216,Bad Tölz-Wolfratshausen,57.25,127919
+DE217,Dachau,64.94,155449
+DE218,Ebersberg,60.65,144562
+DE219,Eichstätt,57.74,133634
+DE21A,Erding,60.37,139622
+DE21B,Freising,109.81,181144
+DE21C,Fürstenfeldbruck,80.54,218579
+DE21D,Garmisch-Partenkirchen,46.91,88232
+DE21E,Landsberg am Lech,57.75,121466
+DE21F,Miesbach,54.2,99978
+DE21G,Mühldorf a. Inn,61,117606
+DE21H,"München, Landkreis",314.68,349837
+DE21I,Neuburg-Schrobenhausen,46.58,98503
+DE21J,Pfaffenhofen a. d. Ilm,62.01,129772
+DE21K,"Rosenheim, Landkreis",125.7,263367
+DE21L,Starnberg,77.4,136747
+DE21M,Traunstein,98.44,178447
+DE21N,Weilheim-Schongau,74.47,136642
+DE221,"Landshut, Kreisfreie Stadt",56.64,73150
+DE222,"Passau, Kreisfreie Stadt",55.83,53093
+DE223,"Straubing, Kreisfreie Stadt",41.32,47854
+DE224,Deggendorf,70.47,120521
+DE225,Freyung-Grafenau,39.69,78632
+DE226,Kelheim,56.94,123899
+DE227,"Landshut, Landkreis",72.04,162331
+DE228,"Passau, Landkreis",88.29,194090
+DE229,Regen,42.2,77176
+DE22A,Rottal-Inn,59.2,122252
+DE22B,Straubing-Bogen,41.2,102398
+DE22C,Dingolfing-Landau,66.66,98045
+DE231,"Amberg, Kreisfreie Stadt",36.89,41994
+DE232,"Regensburg, Kreisfreie Stadt",163.09,153542
+DE233,"Weiden i. d. Opf, Kreisfreie Stadt",39.07,42472
+DE234,Amberg-Sulzbach,41.71,103277
+DE235,Cham,76.4,128444
+DE236,Neumarkt i. d. OPf.,70,136062
+DE237,Neustadt a. d. Waldnaab,43.17,94838
+DE238,"Regensburg, Landkreis",72.13,195225
+DE239,Schwandorf,80.09,149239
+DE23A,Tirschenreuth,37.51,71648
+DE241,"Bamberg, Kreisfreie Stadt",76.91,77749
+DE242,"Bayreuth, Kreisfreie Stadt",66.22,73909
+DE243,"Coburg, Kreisfreie Stadt",41.6,40955
+DE244,"Hof, Kreisfreie Stadt",34.26,45125
+DE245,"Bamberg, Landkreis",55.02,147697
+DE246,"Bayreuth, Landkreis",35.48,103648
+DE247,"Coburg, Landkreis",36.37,86544
+DE248,Forchheim,47.24,116753
+DE249,"Hof, Landkreis",47.94,93907
+DE24A,Kronach,33.79,66091
+DE24B,Kulmbach,37.93,71328
+DE24C,Lichtenfels,36.93,66741
+DE24D,Wunsiedel i. Fichtelgebirge,39.35,71482
+DE251,"Ansbach, Kreisfreie Stadt",37.02,41662
+DE252,"Erlangen, Kreisfreie Stadt",114.2,113292
+DE253,"Fürth, Kreisfreie Stadt",65.62,129122
+DE254,"Nürnberg, Kreisfreie Stadt",403.35,510632
+DE255,"Schwabach, Kreisfreie Stadt",22.93,41146
+DE256,"Ansbach, Landkreis",85.73,186279
+DE257,Erlangen-Höchstadt,67.21,139323
+DE258,"Fürth, Landkreis",36.89,119432
+DE259,Nürnberger Land,78.21,171424
+DE25A,Neustadt a. d. Aisch-Bad Windsheim,47.61,101788
+DE25B,Roth,57.34,127520
+DE25C,Weißenburg-Gunzenhausen,44.83,95523
+DE261,"Aschaffenburg, Kreisfreie Stadt",61.6,71381
+DE262,"Schweinfurt, Kreisfreie Stadt",65.5,53585
+DE263,"Würzburg, Kreisfreie Stadt",130.31,126933
+DE264,"Aschaffenburg, Landkreis",76.44,174965
+DE265,Bad Kissingen,53.62,103454
+DE266,Rhön-Grabfeld,43.82,79376
+DE267,Haßberge,40.25,84284
+DE268,Kitzingen,49.71,91980
+DE269,Miltenberg,61.94,128782
+DE26A,Main-Spessart,63.72,126105
+DE26B,"Schweinfurt, Landkreis",37.6,116134
+DE26C,"Würzburg, Landkreis",59.13,163534
+DE271,"Augsburg, Kreisfreie Stadt",197.65,296478
+DE272,"Kaufbeuren, Kreisfreie Stadt",26.61,45118
+DE273,"Kempten (Allgäu), Kreisfreie Stadt",50.92,69053
+DE274,"Memmingen, Kreisfreie Stadt",38.92,44721
+DE275,Aichach-Friedberg,55.65,135538
+DE276,"Augsburg, Landkreis",114.3,257790
+DE277,Dillingen a.d. Donau,47.57,97985
+DE278,Günzburg,72.82,128436
+DE279,Neu-Ulm,88.13,177330
+DE27A,Lindau (Bodensee),44.27,82330
+DE27B,Ostallgäu,72.79,143236
+DE27C,Unterallgäu,74.64,147776
+DE27D,Donau-Ries,83.89,134986
+DE27E,Oberallgäu,79.88,157202
+DE300,Berlin,2152.27,3677472
+DE401,"Brandenburg an der Havel, Kreisfreie Stadt",39.45,72461
+DE402,"Cottbus, Kreisfreie Stadt",61.63,98359
+DE403,"Frankfurt (Oder), Kreisfreie Stadt",37.44,56679
+DE404,"Potsdam, Kreisfreie Stadt",118.43,183154
+DE405,Barnim,70.02,188835
+DE406,Dahme-Spreewald,82.05,175834
+DE407,Elbe-Elster,43.48,100317
+DE408,Havelland,59.66,165906
+DE409,Märkisch-Oderland,71.33,197965
+DE40A,Oberhavel,80.33,215795
+DE40B,Oberspreewald-Lausitz,48.84,107558
+DE40C,Oder-Spree,79.03,179245
+DE40D,Ostprignitz-Ruppin,45.75,98829
+DE40E,Potsdam-Mittelmark,89.68,219521
+DE40F,Prignitz,35.08,75574
+DE40G,Spree-Neiße,44.03,111955
+DE40H,Teltow-Fläming,84.45,172545
+DE40I,Uckermark,50.97,117336
+DE501,"Bremen, Kreisfreie Stadt",378.77,563290
+DE502,"Bremerhaven, Kreisfreie Stadt",61.26,113173
+DE600,Hamburg,1321.54,1853935
+DE711,"Darmstadt, Kreisfreie Stadt",141.91,159631
+DE712,"Frankfurt am Main, Kreisfreie Stadt",746.01,759224
+DE713,"Offenbach am Main, Kreisfreie Stadt",68.13,131295
+DE714,"Wiesbaden, Kreisfreie Stadt",197.78,278950
+DE715,Bergstraße,112.35,271166
+DE716,Darmstadt-Dieburg,113.69,296900
+DE717,Groß-Gerau,125.06,276307
+DE718,Hochtaunuskreis,130.22,237041
+DE719,Main-Kinzig-Kreis,190.2,423465
+DE71A,Main-Taunus-Kreis,136.7,239276
+DE71B,Odenwaldkreis,39.99,96953
+DE71C,"Offenbach, Landkreis",177.12,357466
+DE71D,Rheingau-Taunus-Kreis,67.73,187229
+DE71E,Wetteraukreis,127.38,311661
+DE721,"Gießen, Landkreis",145.8,272874
+DE722,Lahn-Dill-Kreis,128.42,253364
+DE723,Limburg-Weilburg,80.75,172759
+DE724,Marburg-Biedenkopf,131.43,246097
+DE725,Vogelsbergkreis,46.19,105671
+DE731,"Kassel, Kreisfreie Stadt",155.6,200406
+DE732,Fulda,130.78,223572
+DE733,Hersfeld-Rotenburg,63.83,120163
+DE734,"Kassel, Landkreis",99.52,237268
+DE735,Schwalm-Eder-Kreis,81.74,180052
+DE736,Waldeck-Frankenberg,87.18,156513
+DE737,Werra-Meißner-Kreis,42.83,99714
+DE803,"Rostock, Kreisfreie Stadt",120.91,208400
+DE804,"Schwerin, Kreisfreie Stadt",65.98,95740
+DE80J,Mecklenburgische Seenplatte,121.35,257525
+DE80K,Landkreis Rostock,94.25,217796
+DE80L,Vorpommern-Rügen,100.44,225900
+DE80M,Nordwestmecklenburg,61.51,158449
+DE80N,Vorpommern-Greifswald,109.45,235451
+DE80O,Ludwigslust-Parchim,86.44,211899
+DE911,"Braunschweig, Kreisfreie Stadt",171.02,248823
+DE912,"Salzgitter, Kreisfreie Stadt",57.73,103694
+DE913,"Wolfsburg, Kreisfreie Stadt",131.29,123949
+DE914,Gifhorn,61.3,177919
+DE916,Goslar,61.55,134050
+DE917,Helmstedt,31.86,91379
+DE918,Northeim,61.95,131765
+DE91A,Peine,45.97,136960
+DE91B,Wolfenbüttel,38.3,119224
+DE91C,Göttingen,181.1,323661
+DE922,Diepholz,105.69,218839
+DE923,Hameln-Pyrmont,71.61,148963
+DE925,Hildesheim,128.24,274773
+DE926,Holzminden,31.58,69862
+DE927,Nienburg (Weser),58.67,121773
+DE928,Schaumburg,66.98,158108
+DE929,Region Hannover,701.97,1157541
+DE931,Celle,83.14,179915
+DE932,Cuxhaven,78.34,199603
+DE933,Harburg,102.91,257548
+DE934,Lüchow-Dannenberg,21.21,48472
+DE935,"Lüneburg, Landkreis",88.15,185129
+DE936,Osterholz,42.03,115054
+DE937,Rotenburg (Wümme),84.74,165001
+DE938,Heidekreis,73.97,142912
+DE939,Stade,92.94,206496
+DE93A,Uelzen,43.3,92894
+DE93B,Verden,69.16,138507
+DE941,"Delmenhorst, Kreisfreie Stadt",33.13,77522
+DE942,"Emden, Kreisfreie Stadt",41.1,49523
+DE943,"Oldenburg (Oldenburg), Kreisfreie Stadt",121.88,170389
+DE944,"Osnabrück, Kreisfreie Stadt",133.61,165034
+DE945,"Wilhelmshaven, Kreisfreie Stadt",45.84,75027
+DE946,Ammerland,65.97,126475
+DE947,Aurich,86.71,190425
+DE948,Cloppenburg,100.5,173980
+DE949,Emsland,202.69,331397
+DE94A,Friesland (DE),44.8,98971
+DE94B,Grafschaft Bentheim,74.49,138722
+DE94C,Leer,73.04,172421
+DE94D,"Oldenburg, Landkreis",57.06,132091
+DE94E,"Osnabrück, Landkreis",177.76,361550
+DE94F,Vechta,101.86,144805
+DE94G,Wesermarsch,41.18,88430
+DE94H,Wittmund,25.08,57455
+DEA11,"Düsseldorf, Kreisfreie Stadt",567.85,619477
+DEA12,"Duisburg, Kreisfreie Stadt",233.93,495152
+DEA13,"Essen, Kreisfreie Stadt",347.33,579432
+DEA14,"Krefeld, Kreisfreie Stadt",125.88,227050
+DEA15,"Mönchengladbach, Kreisfreie Stadt",139.87,261001
+DEA16,"Mülheim an der Ruhr, Kreisfreie Stadt",80.84,170739
+DEA17,"Oberhausen, Kreisfreie Stadt",95.97,208752
+DEA18,"Remscheid, Kreisfreie Stadt",61.67,111770
+DEA19,"Solingen, Kreisfreie Stadt",73.19,158957
+DEA1A,"Wuppertal, Kreisfreie Stadt",177.94,354572
+DEA1B,Kleve,152.85,314676
+DEA1C,Mettmann,260.07,484411
+DEA1D,Rhein-Kreis Neuss,216.86,452496
+DEA1E,Viersen,137.07,298761
+DEA1F,Wesel,206.3,460433
+DEA22,"Bonn, Kreisfreie Stadt",264.15,331885
+DEA23,"Köln, Kreisfreie Stadt",801.15,1073096
+DEA24,"Leverkusen, Kreisfreie Stadt",84.5,163851
+DEA26,Düren,125.28,266771
+DEA27,Rhein-Erft-Kreis,204.78,471891
+DEA28,Euskirchen,84.57,194701
+DEA29,Heinsberg,111.55,258306
+DEA2A,Oberbergischer Kreis,144.32,271621
+DEA2B,Rheinisch-Bergischer Kreis,114.63,283429
+DEA2C,Rhein-Sieg-Kreis,250.78,600732
+DEA2D,Städteregion Aachen,307,556673
+DEA31,"Bottrop, Kreisfreie Stadt",46.35,117311
+DEA32,"Gelsenkirchen, Kreisfreie Stadt",117.48,260126
+DEA33,"Münster, Kreisfreie Stadt",245.6,317713
+DEA34,Borken,217.74,373582
+DEA35,Coesfeld,106.02,221352
+DEA36,Recklinghausen,253.73,612801
+DEA37,Steinfurt,232.39,450176
+DEA38,Warendorf,140.17,278176
+DEA41,"Bielefeld, Kreisfreie Stadt",221.27,334002
+DEA42,Gütersloh,235.73,366104
+DEA43,Herford,127.32,250635
+DEA44,Höxter,64.64,139994
+DEA45,Lippe,163.38,346151
+DEA46,Minden-Lübbecke,174.61,311214
+DEA47,Paderborn,172.18,309380
+DEA51,"Bochum, Kreisfreie Stadt",198.05,363441
+DEA52,"Dortmund, Kreisfreie Stadt",342.04,586852
+DEA53,"Hagen, Kreisfreie Stadt",94.89,188713
+DEA54,"Hamm, Kreisfreie Stadt",85.35,179238
+DEA55,"Herne, Kreisfreie Stadt",66.49,156621
+DEA56,Ennepe-Ruhr-Kreis,149.72,322143
+DEA57,Hochsauerlandkreis,152.01,258615
+DEA58,Märkischer Kreis,212.98,406793
+DEA59,Olpe,80.38,133120
+DEA5A,Siegen-Wittgenstein,156.62,274342
+DEA5B,Soest,156.2,302298
+DEA5C,Unna,184.09,393063
+DEB11,"Koblenz, Kreisfreie Stadt",112.24,113638
+DEB12,Ahrweiler,54.15,128146
+DEB13,Altenkirchen (Westerwald),55.08,129261
+DEB14,Bad Kreuznach,76.07,159402
+DEB15,Birkenfeld,38.63,80849
+DEB17,Mayen-Koblenz,98.4,215446
+DEB18,Neuwied,89.52,184390
+DEB1A,Rhein-Lahn-Kreis,51.66,122724
+DEB1B,Westerwaldkreis,101.38,203831
+DEB1C,Cochem-Zell,31.58,61735
+DEB1D,Rhein-Hunsrück-Kreis,57.24,103767
+DEB21,"Trier, Kreisfreie Stadt",76.97,110570
+DEB22,Bernkastel-Wittlich,58.54,113194
+DEB23,Eifelkreis Bitburg-Prüm,41.22,100959
+DEB24,Vulkaneifel,31.31,60882
+DEB25,Trier-Saarburg,50.83,151167
+DEB31,"Frankenthal (Pfalz), Kreisfreie Stadt",25.5,48773
+DEB32,"Kaiserslautern, Kreisfreie Stadt",72.35,99292
+DEB33,"Landau in der Pfalz, Kreisfreie Stadt",34.91,46919
+DEB34,"Ludwigshafen am Rhein, Kreisfreie Stadt",127.02,172145
+DEB35,"Mainz, Kreisfreie Stadt",163.65,217556
+DEB36,"Neustadt an der Weinstraße, Kreisfreie Stadt",27.36,53491
+DEB37,"Pirmasens, Kreisfreie Stadt",26.11,40054
+DEB38,"Speyer, Kreisfreie Stadt",41.73,50565
+DEB39,"Worms, Kreisfreie Stadt",45.45,83850
+DEB3A,"Zweibrücken, Kreisfreie Stadt",22.42,34091
+DEB3B,Alzey-Worms,47.86,131330
+DEB3C,Bad Dürkheim,48.78,133206
+DEB3D,Donnersbergkreis,30.39,75569
+DEB3E,Germersheim,60.28,129313
+DEB3F,"Kaiserslautern, Landkreis",35.86,106853
+DEB3G,Kusel,19.59,69949
+DEB3H,Südliche Weinstraße,46.62,111279
+DEB3I,Rhein-Pfalz-Kreis,44.24,155050
+DEB3J,Mainz-Bingen,84.26,212420
+DEB3K,Südwestpfalz,24.01,94819
+DEC01,Regionalverband Saarbrücken,210.45,327284
+DEC02,Merzig-Wadern,43.39,103426
+DEC03,Neunkirchen,54.67,130847
+DEC04,Saarlouis,93.76,193661
+DEC05,Saarpfalz-Kreis,86.02,140960
+DEC06,St. Wendel,38.26,86170
+DED21,"Dresden, Kreisfreie Stadt",345.76,555351
+DED2C,Bautzen,142.45,296290
+DED2D,Görlitz,114.2,248273
+DED2E,Meißen,112.27,239344
+DED2F,Sächsische Schweiz-Osterzgebirge,103.03,244009
+DED41,"Chemnitz, Kreisfreie Stadt",146.96,243105
+DED42,Erzgebirgskreis,147.94,328695
+DED43,Mittelsachsen,136.63,299329
+DED44,Vogtlandkreis,103.07,221376
+DED45,Zwickau,156.66,309621
+DED51,"Leipzig, Kreisfreie Stadt",359.87,601866
+DED52,Leipzig,103.05,258214
+DED53,Nordsachsen,95.76,197529
+DEE01,"Dessau-Roßlau, Kreisfreie Stadt",41.25,78731
+DEE02,"Halle (Saale), Kreisfreie Stadt",127.51,238061
+DEE03,"Magdeburg, Kreisfreie Stadt",139.82,236188
+DEE04,Altmarkkreis Salzwedel,34.1,81986
+DEE05,Anhalt-Bitterfeld,69.38,155900
+DEE06,Jerichower Land,37.04,89118
+DEE07,Börde,74.12,170106
+DEE08,Burgenlandkreis,73.44,176333
+DEE09,Harz,89.53,209117
+DEE0A,Mansfeld-Südharz,50.87,132317
+DEE0B,Saalekreis,82.72,182814
+DEE0C,Salzlandkreis,76.94,185495
+DEE0D,Stendal,45.3,109746
+DEE0E,Wittenberg,52.87,123341
+DEF01,"Flensburg, Kreisfreie Stadt",61.48,91113
+DEF02,"Kiel, Kreisfreie Stadt",179.68,246243
+DEF03,"Lübeck, Kreisfreie Stadt",136.22,216277
+DEF04,"Neumünster, Kreisfreie Stadt",55.45,79496
+DEF05,Dithmarschen,63.18,133969
+DEF06,Herzogtum Lauenburg,73.86,200819
+DEF07,Nordfriesland,95.22,167560
+DEF08,Ostholstein,95.51,202014
+DEF09,Pinneberg,131.49,318326
+DEF0A,Plön,45.89,129687
+DEF0B,Rendsburg-Eckernförde,124.26,276053
+DEF0C,Schleswig-Flensburg,89.93,203799
+DEF0D,Segeberg,129.66,280400
+DEF0E,Steinburg,58.62,130843
+DEF0F,Stormarn,121.19,245406
+DEG01,"Erfurt, Kreisfreie Stadt",144.53,213227
+DEG02,"Gera, Kreisfreie Stadt",49.36,91368
+DEG03,"Jena, Kreisfreie Stadt",74.92,110502
+DEG05,"Weimar, Kreisfreie Stadt",19.88,65138
+DEG06,Eichsfeld,34.76,99324
+DEG07,Nordhausen,45.53,81687
+DEG09,Unstrut-Hainich-Kreis,37.17,101269
+DEG0A,Kyffhäuserkreis,45.89,72964
+DEG0C,Gotha,26.79,133825
+DEG0D,Sömmerda,57.64,68717
+DEG0E,Hildburghausen,63.79,62089
+DEG0G,Weimarer Land,28.57,82103
+DEG0J,Saale-Holzland-Kreis,23.55,82513
+DEG0K,Saale-Orla-Kreis,50.63,79030
+DEG0L,Greiz,33.28,96102
+DEG0M,Altenburger Land,24.83,87807
+DEG0Q,Schmalkalden-Meiningen,44.14,123404
+DEG0R,Wartburgkreis,34.62,158900
+DEG0S,"Suhl, Kreisfreie Stadt",36.53,36054
+DEG0T,Ilm-Kreis,37.63,105367
+DEG0U,Saalfeld-Rudolstadt,35.38,100969
+DEG0V,Sonneberg,76.44,56504
+DK011,Byen København,554.02,805402
+DK012,Københavns omegn,372.86,553622
+DK013,Nordsjælland,198.13,469286
+DK014,Bornholm,17.97,39638
+DK021,Østsjælland,111.56,254400
+DK022,Vest- og Sydsjælland,242.58,589113
+DK031,Fyn,239.29,501782
+DK032,Sydjylland,395.99,726580
+DK041,Vestjylland,233.12,427996
+DK042,Østjylland,491.09,913861
+DK050,Nordjylland,298.66,591740
+EE001,Põhja-Eesti,355.1,614561
+EE004,Lääne-Eesti,64.27,145721
+EE008,Lõuna-Eesti,150.34,316847
+EE009,Kesk-Eesti,48.59,121931
+EE00A,Kirde-Eesti,49.78,132736
+EL301,Voreios Tomeas Athinon,335.26,600247
+EL302,Dytikos Tomeas Athinon,151.3,478090
+EL303,Kentrikos Tomeas Athinon,695.98,1000231
+EL304,Notios Tomeas Athinon,221.15,528616
+EL305,Anatoliki Attiki,239.67,518193
+EL306,Dytiki Attiki,98.26,165351
+EL307,"Peiraias, Nisoi",237.62,516970
+EL411,"Lesvos, Limnos",42.18,100240
+EL412,"Ikaria, Samos",18.43,42746
+EL413,Chios,20.74,51611
+EL421,"Kalymnos, Karpathos – Iroiki Nisos Kasos, Kos, Rodos",115.39,206722
+EL422,"Andros, Thira, Kea, Milos, Mykonos, Naxos, Paros, Syros, Tinos",64.34,120925
+EL431,Irakleio,158.39,304810
+EL432,Lasithi,30.66,77700
+EL433,Rethymni,38.78,84837
+EL434,Chania,75.92,156553
+EL511,Evros,60.79,133428
+EL512,Xanthi,47.94,108011
+EL513,Rodopi,52.97,104016
+EL514,Drama,29.09,86375
+EL515,"Thasos, Kavala",57.42,128957
+EL521,Imathia,56.25,130642
+EL522,Thessaloniki,530.16,1090902
+EL523,Kilkis,29.17,70196
+EL524,Pella,62.46,126280
+EL525,Pieria,51.19,119054
+EL526,Serres,51.63,150639
+EL527,Chalkidiki,35.14,103607
+EL531,"Grevena, Kozani",66.73,163339
+EL532,Kastoria,18.33,45796
+EL533,Florina,18.45,44740
+EL541,"Arta, Preveza",51.07,118039
+EL542,Thesprotia,18.34,40702
+EL543,Ioannina,69.02,160473
+EL611,"Karditsa, Trikala",105.18,227629
+EL612,Larisa,137.8,268424
+EL613,"Magnisia, Sporades",75.62,190397
+EL621,Zakynthos,28.37,41173
+EL622,Kerkyra,51.95,101391
+EL623,"Ithaki, Kefallinia",13.99,38842
+EL624,Lefkada,8.77,22760
+EL631,Aitoloakarnania,83.8,191876
+EL632,Achaia,119.25,305414
+EL633,Ileia,71.05,149474
+EL641,Voiotia,64.66,105814
+EL642,Evvoia,70.41,210346
+EL643,Evrytania,8.47,17373
+EL644,Fthiotida,79.65,137357
+EL645,Fokida,14.42,36101
+EL651,"Argolida, Arkadia",84,170374
+EL652,Korinthia,57.73,137946
+EL653,"Lakonia, Messinia",112.08,229898
+ES111,A Coruña,471.9,1119166
+ES112,Lugo,133.3,324240
+ES113,Ourense,118.4,304225
+ES114,Pontevedra,386.5,945198
+ES120,Asturias,397.6,1004960
+ES130,Cantabria,232.3,585451
+ES211,Araba/Álava,164.6,333909
+ES212,Gipuzkoa,362.2,723241
+ES213,Bizkaia,506.4,1148678
+ES220,Navarra,311.7,664514
+ES230,La Rioja,140.3,319617
+ES241,Huesca,105.4,225199
+ES242,Teruel,58.8,134132
+ES243,Zaragoza,455.8,968886
+ES300,Madrid,3716.2,6743273
+ES411,Ávila,59.2,159103
+ES412,Burgos,161.1,354846
+ES413,León,175.3,449271
+ES414,Palencia,67.6,157993
+ES415,Salamanca,135.6,326285
+ES416,Segovia,69.6,153731
+ES417,Soria,42.5,88330
+ES418,Valladolid,232,518159
+ES419,Zamora,63.6,167868
+ES421,Albacete,156.7,385967
+ES422,Ciudad Real,179.1,490952
+ES423,Cuenca,84.9,196640
+ES424,Guadalajara,87.3,268412
+ES425,Toledo,253.3,716313
+ES431,Badajoz,251.9,667851
+ES432,Cáceres,146.1,388957
+ES511,Barcelona,2780.2,5699634
+ES512,Girona,375.9,790435
+ES513,Lleida,214.1,440884
+ES514,Tarragona,339.3,830911
+ES521,Alicante/Alacant,734.9,1907497
+ES522,Castellón/Castelló,254.1,591303
+ES523,Valencia/València,1101.9,2609327
+ES531,Eivissa y Formentera,71.2,167295
+ES532,Mallorca,419.6,922605
+ES533,Menorca,33.7,97143
+ES611,Almería,311.2,739543
+ES612,Cádiz,410.5,1250545
+ES613,Córdoba,283,775111
+ES614,Granada,333.7,926021
+ES615,Huelva,187.4,531096
+ES616,Jaén,219,624191
+ES617,Málaga,675,1715118
+ES618,Sevilla,754.9,1949560
+ES620,Murcia,652,1529662
+ES630,Ceuta,31.4,83054
+ES640,Melilla,32.5,84932
+ES703,El Hierro,3.9,11417
+ES704,Fuerteventura,50.4,119621
+ES705,Gran Canaria,342.2,858475
+ES706,La Gomera,7.8,22003
+ES707,La Palma,30.8,84006
+ES708,Lanzarote,68.9,155638
+ES709,Tenerife,370.7,934449
+FI196,Satakunta,100.25,214281
+FI198,Keski-Suomi,118.26,272683
+FI199,Etelä-Pohjanmaa,89.56,191762
+FI19A,Pohjanmaa,86.88,176041
+FI19B,Pirkanmaa,248.09,527478
+FI1B1,Helsinki-Uusimaa,991.42,1714741
+FI1C1,Varsinais-Suomi,229.81,483477
+FI1C2,Kanta-Häme,77.77,170213
+FI1C5,Etelä-Karjala,52.73,126107
+FI1C6,Päijät-Häme,86.19,205124
+FI1C7,Kymenlaakso,71.32,161391
+FI1D5,Keski-Pohjanmaa,30.78,67915
+FI1D7,Lappi,81.63,176494
+FI1D8,Kainuu,33.81,71255
+FI1D9,Pohjois-Pohjanmaa,189.59,415603
+FI1DA,Etelä-Savo,55.65,131688
+FI1DB,Pohjois-Savo,112.77,248363
+FI1DC,Pohjois-Karjala,66.93,163281
+FI200,Åland,17.8,30344
+FR101,Paris,2200.6,2113705
+FR102,Seine-et-Marne,551.3,1452399
+FR103,Yvelines,588.9,1470778
+FR104,Essonne,534.2,1324546
+FR105,Hauts-de-Seine,1241.7,1647435
+FR106,Seine-Saint-Denis,716.6,1681725
+FR107,Val-de-Marne,600.4,1419531
+FR108,Val-d'Oise,449.3,1270845
+FRB01,Cher,111.8,299496
+FRB02,Eure-et-Loir,152.2,432950
+FRB03,Indre,82.2,216809
+FRB04,Indre-et-Loire,266.1,616326
+FRB05,Loir-et-Cher,129.6,328953
+FRB06,Loiret,292,687063
+FRC11,Côte-d’Or,244.5,537577
+FRC12,Nièvre,73.3,202299
+FRC13,Saône-et-Loire,216.6,549136
+FRC14,Yonne,123.5,333896
+FRC21,Doubs,218.8,548662
+FRC22,Jura,98.5,258405
+FRC23,Haute-Saône,78.5,233920
+FRC24,Territoire de Belfort,53.4,140082
+FRD11,Calvados,304.7,704605
+FRD12,Manche,207,496815
+FRD13,Orne,107.5,276144
+FRD21,Eure,204.9,601305
+FRD22,Seine-Maritime,531.8,1260205
+FRE11,Nord,1116.7,2616909
+FRE12,Pas-de-Calais,522,1460184
+FRE21,Aisne,174.3,525558
+FRE22,Oise,287.1,830725
+FRE23,Somme,223.9,565540
+FRF11,Bas-Rhin,528.5,1156963
+FRF12,Haut-Rhin,294.4,767800
+FRF21,Ardennes,91.5,267204
+FRF22,Aube,117,311076
+FRF23,Marne,251.2,564107
+FRF24,Haute-Marne,68.2,169865
+FRF31,Meurthe-et-Moselle,273.3,732898
+FRF32,Meuse,62.6,180745
+FRF33,Moselle,370.3,1050721
+FRF34,Vosges,138.5,358700
+FRG01,Loire-Atlantique,716.3,1473156
+FRG02,Maine-et-Loire,357.7,828151
+FRG03,Mayenne,130.4,305437
+FRG04,Sarthe,228.6,566129
+FRG05,Vendée,297.1,706343
+FRH01,Côtes-d’Armor,237.5,609598
+FRH02,Finistère,382.6,927912
+FRH03,Ille-et-Vilaine,533.9,1109232
+FRH04,Morbihan,311.9,776103
+FRI11,Dordogne,156.1,416325
+FRI12,Gironde,804.9,1674980
+FRI13,Landes,166.5,428427
+FRI14,Lot-et-Garonne,132.8,332226
+FRI15,Pyrénées-Atlantiques,303.2,699473
+FRI21,Corrèze,97.5,240120
+FRI22,Creuse,41.8,115529
+FRI23,Haute-Vienne,150,372438
+FRI31,Charente,147.3,351603
+FRI32,Charente-Maritime,263.7,668160
+FRI33,Deux-Sèvres,158.4,375415
+FRI34,Vienne,179.3,438688
+FRJ11,Aude,135.5,377773
+FRJ12,Gard,274.7,764010
+FRJ13,Hérault,511.7,1217331
+FRJ14,Lozère,31.6,76503
+FRJ15,Pyrénées-Orientales,180.9,492964
+FRJ21,Ariège,57.1,155339
+FRJ22,Aveyron,113.5,279736
+FRJ23,Haute-Garonne,734.3,1456261
+FRJ24,Gers,73.2,192649
+FRJ25,Lot,67.3,175620
+FRJ26,Hautes-Pyrénées,92.3,231453
+FRJ27,Tarn,143.1,396168
+FRJ28,Tarn-et-Garonne,99.1,264924
+FRK11,Allier,126.6,334715
+FRK12,Cantal,58.3,144399
+FRK13,Haute-Loire,86,228161
+FRK14,Puy-de-Dôme,286.8,664385
+FRK21,Ain,233.5,671289
+FRK22,Ardèche,113.5,333229
+FRK23,Drôme,236.5,521432
+FRK24,Isère,556,1291380
+FRK25,Loire,300.2,772041
+FRK26,Rhône,1082.6,1907982
+FRK27,Savoie,233.8,445288
+FRK28,Haute-Savoie,345.4,849583
+FRL01,Alpes-de-Haute-Provence,66.9,167179
+FRL02,Hautes-Alpes,64.9,141677
+FRL03,Alpes-Maritimes,507.4,1114579
+FRL04,Bouches-du-Rhône,980,2069811
+FRL05,Var,429.7,1108364
+FRL06,Vaucluse,244.7,568702
+FRM01,Corse-du-Sud,70.7,166045
+FRM02,Haute-Corse,72.6,185231
+FRY10,Guadeloupe,147.9,415065
+FRY20,Martinique,148,361019
+FRY30,Guyane,77.1,288382
+FRY40,La Réunion,333.1,881348
+FRY50,Mayotte,50.5,299634
+HR021,Bjelovarsko-bilogorska županija,39.57,101208
+HR022,Virovitičko-podravska županija,27.02,69921
+HR023,Požeško-slavonska županija,23.68,63624
+HR024,Brodsko-posavska županija,46.5,129449
+HR025,Osječko-baranjska županija,102.69,256800
+HR026,Vukovarsko-srijemska županija,52.1,142230
+HR027,Karlovačka županija,45.06,111591
+HR028,Sisačko-moslavačka županija,54.34,138749
+HR031,Primorsko-goranska županija,116.35,264560
+HR032,Ličko-senjska županija,17.76,42557
+HR033,Zadarska županija,64.51,159725
+HR034,Šibensko-kninska županija,36.07,96023
+HR035,Splitsko-dalmatinska županija,168.3,423085
+HR036,Istarska županija,96.8,195061
+HR037,Dubrovačko-neretvanska županija,50.24,115199
+HR050,Grad Zagreb,353.28,766824
+HR061,Međimurska županija,44.89,105211
+HR062,Varaždinska županija,72.33,158968
+HR063,Koprivničko-križevačka županija,42.56,100894
+HR064,Krapinsko-zagorska županija,52.79,120338
+HR065,Zagrebačka županija,135.68,300288
+HU110,Budapest,1632.14,1672443
+HU120,Pest,525.65,1315964
+HU211,Fejér,193.52,418542
+HU212,Komárom-Esztergom,147.09,300869
+HU213,Veszprém,140.92,339498
+HU221,Győr-Moson-Sopron,230.01,468465
+HU222,Vas,110.87,248909
+HU223,Zala,105.86,262370
+HU231,Baranya,136.22,357066
+HU232,Somogy,100.35,296422
+HU233,Tolna,84.19,209569
+HU311,Borsod-Abaúj-Zemplén,220.41,629621
+HU312,Heves,112.18,288430
+HU313,Nógrád,49.33,183318
+HU321,Hajdú-Bihar,201.84,521802
+HU322,Jász-Nagykun-Szolnok,126.53,358883
+HU323,Szabolcs-Szatmár-Bereg,172.48,531855
+HU331,Bács-Kiskun,196.49,495675
+HU332,Békés,107.74,318081
+HU333,Csongrád-Csanád,162.16,392621
+IE041,Border,183.2,420002
+IE042,West,233.22,483851
+IE051,Mid-West,239.21,506131
+IE052,South-East,205.9,457996
+IE053,South-West,372.19,738206
+IE061,Dublin,912.56,1461005
+IE062,Mid-East,306.01,767897
+IE063,Midland,142.23,319189
+ITC11,Torino,992.3,2208370
+ITC12,Vercelli,68.3,166083
+ITC13,Biella,68.7,170027
+ITC14,Verbano-Cusio-Ossola,57.5,154249
+ITC15,Novara,155.5,361916
+ITC16,Cuneo,281.1,580155
+ITC17,Asti,82.9,208286
+ITC18,Alessandria,168,407264
+ITC20,Valle d’Aosta/Vallée d’Aoste,61.4,123360
+ITC31,Imperia,75.1,208670
+ITC32,Savona,108.9,268038
+ITC33,Genova,386.6,817402
+ITC34,La Spezia,95.3,215117
+ITC41,Varese,355.4,877668
+ITC42,Como,239.7,594941
+ITC43,Lecco,141.2,332457
+ITC44,Sondrio,77.1,178784
+ITC46,Bergamo,501.5,1102997
+ITC47,Brescia,587.6,1253157
+ITC48,Pavia,197.5,534506
+ITC49,Lodi,79.7,227327
+ITC4A,Cremona,144.3,351654
+ITC4B,Mantova,184.1,404476
+ITC4C,Milano,2052.8,3214630
+ITC4D,Monza e della Brianza,352.5,870407
+ITF11,L’Aquila,114.9,288956
+ITF12,Teramo,128.4,299646
+ITF13,Pescara,124.2,313631
+ITF14,Chieti,165.6,373717
+ITF21,Isernia,29,80564
+ITF22,Campobasso,79.6,211586
+ITF31,Caserta,282.3,905045
+ITF32,Benevento,90.3,265055
+ITF33,Napoli,999.6,2988376
+ITF34,Avellino,144.1,401451
+ITF35,Salerno,387,1064493
+ITF43,Taranto,194.3,559892
+ITF44,Brindisi,131.3,381273
+ITF45,Lecce,273.3,775348
+ITF46,Foggia,200.9,599028
+ITF47,Bari,501.9,1226784
+ITF48,Barletta-Andria-Trani,122.9,380616
+ITF51,Potenza,133.3,349616
+ITF52,Matera,73.5,191552
+ITF61,Cosenza,215.3,674543
+ITF62,Crotone,52.2,163553
+ITF63,Catanzaro,125.1,343673
+ITF64,Vibo Valentia,49.1,151558
+ITF65,Reggio Calabria,169.6,522127
+ITG11,Trapani,128.8,417220
+ITG12,Palermo,388.3,1208991
+ITG13,Messina,203,603229
+ITG14,Agrigento,121.1,415887
+ITG15,Caltanissetta,73.7,251715
+ITG16,Enna,44.7,156730
+ITG17,Catania,351.9,1077515
+ITG18,Ragusa,117,316142
+ITG19,Siracusa,122.5,385900
+ITG2D,Sassari,190.3,476516
+ITG2E,Nuoro,76.1,200376
+ITG2F,Cagliari,203.2,421688
+ITG2G,Oristano,54.6,151655
+ITG2H,Sud Sardegna,96.5,337178
+ITH10,Bolzano-Bozen,308.7,532616
+ITH20,Trento,271.1,540958
+ITH31,Verona,456.9,924024
+ITH32,Vicenza,420,852139
+ITH33,Belluno,93.8,198676
+ITH34,Treviso,419,877890
+ITH35,Venezia,377.7,836916
+ITH36,Padova,459.3,929198
+ITH37,Rovigo,95.4,228902
+ITH41,Pordenone,141.3,309473
+ITH42,Udine,238.2,518442
+ITH43,Gorizia,58,137899
+ITH44,Trieste,106,228833
+ITH51,Piacenza,137.5,283435
+ITH52,Parma,230.3,448916
+ITH53,Reggio nell’Emilia,253.5,525586
+ITH54,Modena,355.2,701751
+ITH55,Bologna,537.8,1010812
+ITH56,Ferrara,132.4,339573
+ITH57,Ravenna,175.4,385631
+ITH58,Forlì-Cesena,189.8,391293
+ITH59,Rimini,160.5,338369
+ITI11,Massa-Carrara,72.7,188483
+ITI12,Lucca,165,382464
+ITI13,Pistoia,114.7,289414
+ITI14,Firenze,519.2,987260
+ITI15,Prato,131,258123
+ITI16,Livorno,136.8,327262
+ITI17,Pisa,190.5,417041
+ITI18,Arezzo,149.6,334926
+ITI19,Siena,127.9,261209
+ITI1A,Grosseto,93.8,217009
+ITI21,Perugia,283.6,640482
+ITI22,Terni,87.7,218330
+ITI31,Pesaro e Urbino,161.6,349818
+ITI32,Ancona,216.2,461687
+ITI33,Macerata,140,304986
+ITI34,Ascoli Piceno,88.4,202365
+ITI35,Fermo,70.2,168294
+ITI41,Viterbo,109.9,308737
+ITI42,Rieti,52.8,151143
+ITI43,Roma,2157.8,4216874
+ITI44,Latina,213.7,567439
+ITI45,Frosinone,168.1,470689
+LT011,Vilniaus apskritis,499.45,817950
+LT021,Alytaus apskritis,62.17,135703
+LT022,Kauno apskritis,290.2,569566
+LT023,Klaipėdos apskritis,163.06,324263
+LT024,Marijampolės apskritis,65.38,136429
+LT025,Panevėžio apskritis,99.08,212714
+LT026,Šiaulių apskritis,122.65,261145
+LT027,Tauragės apskritis,41.68,90893
+LT028,Telšių apskritis,60.35,131691
+LT029,Utenos apskritis,51.45,125644
+LU000,Luxembourg,501.25,645397
+LV005,Latgale,106.92,247220
+LV009,Zemgale,87.35,225017
+LV00A,Rīga,483.34,850353
+LV00B,Kurzeme,122.62,277130
+LV00C,Vidzeme,105.84,276037
+MK001,Vardarski,54.73,138835
+MK002,Istočen,67.24,150155
+MK003,Jugozapaden,64.28,177682
+MK004,Jugoistočen,84.93,148522
+MK005,Pelagoniski,100.69,210502
+MK006,Pološki,83.88,252114
+MK007,Severoistočen,40.28,153120
+MK008,Skopski,247.54,606184
+MT001,Malta,274.75,480907
+MT002,Gozo and Comino/Għawdex u Kemmuna,15.45,39267
+NL112,Delfzijl en omgeving,19.07,45389
+NL114,Oost-Groningen,56.21,136605
+NL115,Overig Groningen,235.27,408176
+NL126,Zuidoost-Friesland,102.39,188763
+NL127,Noord-Friesland,161.28,323359
+NL128,Zuidwest-Friesland,66.84,141897
+NL131,Noord-Drenthe,93.95,193706
+NL132,Zuidoost-Drenthe,75.97,169054
+NL133,Zuidwest-Drenthe,75.38,134983
+NL211,Noord-Overijssel,231.2,379911
+NL212,Zuidwest-Overijssel,83.22,158082
+NL213,Twente,347.2,633917
+NL221,Veluwe,401.92,706888
+NL224,Zuidwest-Gelderland,137.35,250968
+NL225,Achterhoek,204.38,403396
+NL226,Arnhem/Nijmegen,406.68,749220
+NL230,Flevoland,200.81,434771
+NL321,Kop van Noord-Holland,183.53,381066
+NL323,IJmond,89.28,199581
+NL325,Zaanstreek,76.57,173547
+NL327,Het Gooi en Vechtstreek,131.09,239898
+NL328,Alkmaar en omgeving,123.54,252618
+NL32A,Agglomeratie Haarlem,106.66,231294
+NL32B,Groot-Amsterdam,1127.29,1431823
+NL341,Zeeuwsch-Vlaanderen,51.54,105175
+NL342,Overig Zeeland,143.01,281592
+NL350,Utrecht,875.24,1369873
+NL361,Agglomeratie ’s-Gravenhage,505,896471
+NL362,Delft en Westland,158.6,236504
+NL363,Agglomeratie Leiden en Bollenstreek,219.08,434527
+NL364,Zuidoost-Zuid-Holland,207.66,374968
+NL365,Oost-Zuid-Holland,159.3,340481
+NL366,Groot-Rijnmond,817.54,1470993
+NL411,West-Noord-Brabant,359.11,640061
+NL414,Zuidoost-Noord-Brabant,493.88,791075
+NL415,Midden-Noord-Brabant,284.33,497266
+NL416,Noordoost-Noord-Brabant,388.31,664472
+NL421,Noord-Limburg,171.91,285157
+NL422,Midden-Limburg,121.16,239098
+NL423,Zuid-Limburg,305.09,594047
+PL213,Miasto Kraków,598.5,791939
+PL214,Krakowski,291.1,747568
+PL217,Tarnowski,163.4,426294
+PL218,Nowosądecki,205.1,513097
+PL219,Nowotarski,121,319903
+PL21A,Oświęcimski,201.8,522161
+PL224,Częstochowski,215.6,482129
+PL225,Bielski,298.4,645522
+PL227,Rybnicki,227.4,591269
+PL228,Bytomski,149.1,406324
+PL229,Gliwicki,216.8,431463
+PL22A,Katowicki,408.3,688521
+PL22B,Sosnowiecki,255.3,642334
+PL22C,Tyski,189.8,386273
+PL411,Pilski,160.7,386428
+PL414,Koniński,252.1,626025
+PL415,Miasto Poznań,374.1,540458
+PL416,Kaliski,315,646066
+PL417,Leszczyński,253.7,544388
+PL418,Poznański,344.9,706509
+PL424,Miasto Szczecin,237.6,389103
+PL426,Koszaliński,153.4,335325
+PL427,Szczecinecko-pyrzycki,136.6,384399
+PL428,Szczeciński,207,489432
+PL431,Gorzowski,170.6,364545
+PL432,Zielonogórski,264.1,593736
+PL514,Miasto Wrocław,470.7,670438
+PL515,Jeleniogórski,195.5,516978
+PL516,Legnicko-głogowski,186.6,422618
+PL517,Wałbrzyski,218.3,589688
+PL518,Wrocławski,281.9,622507
+PL523,Nyski,126.3,339070
+PL524,Opolski,281.7,563374
+PL613,Bydgosko-toruński,396.8,747601
+PL616,Grudziądzki,156.7,363319
+PL617,Inowrocławski,137.5,337250
+PL618,Świecki,76,175188
+PL619,Włocławski,140.3,331420
+PL621,Elbląski,205.8,483141
+PL622,Olsztyński,277.2,568874
+PL623,Ełcki,100.7,259828
+PL633,Trójmiejski,475.6,746755
+PL634,Gdański,240.3,617801
+PL636,Słupski,138,313412
+PL637,Chojnicki,90.3,214696
+PL638,Starogardzki,161.9,402846
+PL711,Miasto Łódź,398.2,659112
+PL712,Łódzki,167.9,386039
+PL713,Piotrkowski,244,550213
+PL714,Sieradzki,180.6,422292
+PL715,Skierniewicki,149.6,341811
+PL721,Kielecki,325.8,701880
+PL722,Sandomiersko-jędrzejowski,190.9,440838
+PL811,Bialski,119.1,277011
+PL812,Chełmsko-zamojski,218.2,561415
+PL814,Lubelski,358.9,684656
+PL815,Puławski,196.7,438994
+PL821,Krośnieński,169.8,439214
+PL822,Przemyski,129.9,354015
+PL823,Rzeszowski,300.8,616786
+PL824,Tarnobrzeski,233,558601
+PL841,Białostocki,242,487896
+PL842,Łomżyński,163.3,355302
+PL843,Suwalski,114.4,246187
+PL911,Miasto Warszawa,1440.3,1868018
+PL912,Warszawski wschodni,202.9,682578
+PL913,Warszawski zachodni,290.4,706197
+PL921,Radomski,217.8,569326
+PL922,Ciechanowski,128.3,323742
+PL923,Płocki,132.5,308637
+PL924,Ostrołęcki,145.5,363618
+PL925,Siedlecki,167.3,401044
+PL926,Żyrardowski,114.4,256324
+PT111,Alto Minho,103.75,231882
+PT112,Cávado,209,419835
+PT119,Ave,197.98,419091
+PT11A,Área Metropolitana do Porto,869.4,1755844
+PT11B,Alto Tâmega e Barroso,32.83,83801
+PT11C,Tâmega e Sousa,183.28,408674
+PT11D,Douro,86.1,183831
+PT11E,Terras de Trás-os-Montes,49.44,107020
+PT150,Algarve,254.79,469983
+PT191,Região de Aveiro,181.71,373365
+PT192,Região de Coimbra,192.64,440065
+PT193,Região de Leiria,142.22,290019
+PT194,Viseu Dão Lafões,112.76,254169
+PT195,Beira Baixa,39.74,99424
+PT196,Beiras e Serra da Estrela,86.34,210496
+PT1A0,Grande Lisboa,1295.58,2068670
+PT1B0,Península de Setúbal,274.61,814975
+PT1C1,Alentejo Litoral,54.8,98303
+PT1C2,Baixo Alentejo,54.11,115663
+PT1C3,Alto Alentejo,47.15,105031
+PT1C4,Alentejo Central,74.24,153507
+PT1D1,Oeste,159.26,372365
+PT1D2,Médio Tejo,84.85,212745
+PT1D3,Lezíria do Tejo,103.83,240872
+PT200,Região Autónoma dos Açores,119.37,238794
+PT300,Região Autónoma da Madeira,126.56,252693
+RO111,Bihor,286.2,552031
+RO112,Bistriţa-Năsăud,125.64,295351
+RO113,Cluj,356.96,683028
+RO114,Maramureş,181.55,451499
+RO115,Satu Mare,147.1,330363
+RO116,Sălaj,91.84,211329
+RO121,Alba,149.08,325715
+RO122,Braşov,255.32,548254
+RO123,Covasna,81.64,199912
+RO124,Harghita,107.96,291633
+RO125,Mureş,194,518991
+RO126,Sibiu,185.67,388896
+RO211,Bacău,288.77,599435
+RO212,Botoşani,156.27,391108
+RO213,Iaşi,396.7,765720
+RO214,Neamţ,253.02,452057
+RO215,Suceava,286.23,640816
+RO216,Vaslui,195.18,372861
+RO221,Brăila,138.12,280196
+RO222,Buzău,161.26,403817
+RO223,Constanţa,286.45,656017
+RO224,Galaţi,172.63,495030
+RO225,Tulcea,93.82,192566
+RO226,Vrancea,109.79,334066
+RO311,Argeş,244.59,566913
+RO312,Călăraşi,104.99,281980
+RO313,Dâmboviţa,140.1,478599
+RO314,Giurgiu,73.27,260203
+RO315,Ialomiţa,110.96,250451
+RO316,Prahova,287.2,694502
+RO317,Teleorman,111.05,322245
+RO321,Bucureşti,1107.73,1722974
+RO322,Ilfov,190.15,545407
+RO411,Dolj,264.86,599580
+RO412,Gorj,145.27,313025
+RO413,Mehedinţi,95.82,233636
+RO414,Olt,153.13,381731
+RO415,Vâlcea,153.99,341630
+RO421,Arad,178.37,410282
+RO422,Caraş-Severin,73.44,246319
+RO423,Hunedoara,138.97,360692
+RO424,Timiş,324.44,652238
+RS110,Beogradska oblast,923.62,1684567
+RS121,Zapadnobacka oblast,65.8,165106
+RS122,Juznobanatska oblast,111.23,270976
+RS123,Juznobacka oblast,289.41,616178
+RS124,Severnobanatska oblast,56.26,131089
+RS125,Severnobacka oblast,75.12,174440
+RS126,Srednjobanatska oblast,70.61,168556
+RS127,Sremska oblast,140.87,291189
+RS211,Zlatiborska oblast,159.24,257288
+RS212,Kolubarska oblast,87.99,157489
+RS213,Macvanska oblast,142.98,268766
+RS214,Moravicka oblast,115.09,192760
+RS215,Pomoravska oblast,87.53,189248
+RS216,Rasinska oblast,110.35,213662
+RS217,Raska oblast,124.86,301129
+RS218,Sumadijska oblast,129.25,274299
+RS221,Borska oblast,52.33,105741
+RS222,Branicevska oblast,81.78,158517
+RS223,Zajecarska oblast,50.17,101003
+RS224,Jablanicka oblast,99.46,191728
+RS225,Nisavska oblast,163.28,351904
+RS226,Pirotska oblast,36.3,80410
+RS227,Podunavska oblast,77.23,179047
+RS228,Pcinjska oblast,81.74,191959
+RS229,Toplicka oblast,46.52,80054
+SE110,Stockholms län,1425.1,2415139
+SE121,Uppsala län,192.5,395026
+SE122,Södermanlands län,126,301801
+SE123,Östergötlands län,246,469704
+SE124,Örebro län,153.7,306792
+SE125,Västmanlands län,128.8,278967
+SE211,Jönköpings län,196.9,367064
+SE212,Kronobergs län,108.2,203340
+SE213,Kalmar län,114.3,247175
+SE214,Gotlands län,32.8,61001
+SE221,Blekinge län,73.3,158937
+SE224,Skåne län,679.6,1402425
+SE231,Hallands län,160,340243
+SE232,Västra Götalands län,921.5,1744859
+SE311,Värmlands län,128.5,283196
+SE312,Dalarnas län,135.2,288387
+SE313,Gävleborgs län,131.4,287767
+SE321,Västernorrlands län,118.5,244193
+SE322,Jämtlands län,63.9,132054
+SE331,Västerbottens län,139.2,274563
+SE332,Norrbottens län,124.1,249693
+SI031,Pomurska,46.38,114226
+SI032,Podravska,154.06,327998
+SI033,Koroška,30.27,70571
+SI034,Savinjska,129.73,258699
+SI035,Zasavska,17.65,56883
+SI036,Posavska,33.77,75824
+SI037,Jugovzhodna Slovenija,67.99,146252
+SI038,Primorsko-notranjska,21.54,53334
+SI041,Osrednjeslovenska,376.01,555213
+SI042,Gorenjska,92.3,211227
+SI043,Goriška,56.91,118313
+SI044,Obalno-kraška,55.96,118640
+SK010,Bratislavský kraj,466.11,723714
+SK021,Trnavský kraj,246.01,565296
+SK022,Trenčiansky kraj,264.57,573699
+SK023,Nitriansky kraj,297.8,673547
+SK031,Žilinský kraj,321.95,689525
+SK032,Banskobystrický kraj,252.88,620986
+SK041,Prešovský kraj,285.57,807657
+SK042,Košický kraj,292.41,780288
