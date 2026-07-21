@@ -489,3 +489,12 @@
 - **大きさが縮小した例（50〜54歳割合 vs 55〜59歳割合）**: NUTS3単位corr=0.63(有意) → 市区町村単位corr=0.376(有意)、正の関係を保ったまま強さが約4割縮小。
 - **頑健(similar)だった例（人口増減率 vs 老年従属人口指数）**: NUTS3単位corr=-0.603(有意) → 市区町村単位corr=-0.669(有意)、ほぼ同じ強さで「人口減少地域ほど高齢化が進む」という関係が単位によらず成り立つ。
 - `similar`と判定された全件も含め`results/summary_table.csv`（id=4782〜5081）に記録済み。詳細は`results/summaries/id4782_5081_portugal_ine_pairwise.csv`、経緯は`results/aggregation_effect_log.md`の該当項を参照。
+
+## 2026-07-21: アイスランド Hagstofa Íslands 190組み合わせの内訳（reversed/magnitude_change/similarすべて記録）
+
+- **reversed（符号逆転）**: 33件 / **magnitude_change（大きさが大きく変化）**: 100件 / **similar（ほぼ同様）**: 57件（合計190件）
+- **注目例1（65歳以上人口の割合 vs 年少人口指数）**: landshluti(広域圏、8単位)単位corr=+0.754(有意) → sveitarfélög(市区町村、61〜62単位)単位corr=-0.31(有意)。両方とも統計的に有意な逆転で、広域圏単位では「高齢化が進む地域ほど子供の比率も高い」ように見えていたのが、市区町村単位では逆に「高齢化が進む市区町村ほど子供の比率は低い」という直感に合う関係に変わる。
+- **注目例2（年少人口指数 vs 老年化指数）**: landshluti単位corr=+0.585(有意でない) → sveitarfélög単位corr=-0.748(有意)、有意性を伴う符号逆転。
+- **大きさが縮小した例（75-84歳人口の割合 vs 年少人口指数）**: landshluti単位corr=+0.741(有意) → sveitarfélög単位corr=-0.106(有意でない)、有意な正の関係が市区町村単位でほぼ消失。
+- **頑健(similar)だった例（0-14歳人口の割合 vs 10-14歳人口の割合）**: landshluti単位corr=0.827(有意) → sveitarfélög単位corr=0.836(有意)、ほぼ同じ強さ。
+- `similar`と判定された全件も含め`results/summary_table.csv`（id=5082〜5271）に記録済み。詳細は`results/summaries/id5082_5271_iceland_hagstofa_pairwise.csv`、経緯は`results/aggregation_effect_log.md`の該当項を参照。
