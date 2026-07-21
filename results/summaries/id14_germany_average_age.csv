@@ -1,0 +1,3 @@
+level,n,mean,stdev,min,max,range
+Bundesland(州),16,45.544,2.006,42.3,48.4,6.1
+Gemeinde(市町村),10659,46.546,2.717,33.4,61.4,28.0
