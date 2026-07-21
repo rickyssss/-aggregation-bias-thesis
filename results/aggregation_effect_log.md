@@ -305,3 +305,11 @@
 いずれも都道府県単位・市区町村単位ともにサンプル数が多く、統計的な有意性チェック（両側t検定、有意水準5%）でも両方とも有意でした。ただし相関の強さそのものが大きく縮小している点が、集計単位によって見え方が変わることの分かりやすい例になっています。
 
 取得に使ったAPIの利用方法については `docs/api_requirements.md` にメモを残しました（アプリケーションIDの値自体はセキュリティ上リポジトリには記載していません）。
+
+---
+
+## Local PC addition: SSDSE full pairwise analysis (2026-07-21)
+
+Extracted 34 common variables from SSDSE-B (prefecture) and SSDSE-A (municipality). Initially computed correlations on raw counts, which gave 528/528 similar (all r near 1.0) - this was a methodology bug: raw counts all scale with population size regardless of aggregation level, so it wasn't measuring the aggregation effect at all. Fixed by converting every variable to a per-1000-population rate before computing correlations.
+
+Results after fix (528 pairs): 45 statistically significant reversals, 190 statistically significant magnitude changes. Merged into results/summary_table.csv as id=200 to id=727. Script: scripts/ssdse_full_extract.ps1

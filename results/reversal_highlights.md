@@ -304,3 +304,28 @@
 - **詳細・データ元**: `results/aggregation_effect_log.md` の「2026-07-21（18回目：id=19 アメリカ・失業率）」の項、要約統計量は `results/summaries/id19_usa_unemployment.csv` を参照。
 
 ---
+
+---
+
+## SSDSE total-combination analysis (Japan) - top statistically significant reversals
+
+- 総人口（男） per1000pop(A110101_rate) vs 15～64歳人口（女） per1000pop(A130202_rate): todofuken(n=47) corr=0.292 -> shikuchoson(n=1740) corr=-0.09
+- 総人口（男） per1000pop(A110101_rate) vs 死亡数 per1000pop(A4200_rate): todofuken(n=47) corr=-0.539 -> shikuchoson(n=1740) corr=0.178
+- 総人口（男） per1000pop(A110101_rate) vs 小学校数 per1000pop(E2101_rate): todofuken(n=47) corr=-0.445 -> shikuchoson(n=1740) corr=0.171
+- 総人口（男） per1000pop(A110101_rate) vs 小学校教員数 per1000pop(E2401_rate): todofuken(n=47) corr=-0.424 -> shikuchoson(n=1740) corr=0.19
+- 総人口（男） per1000pop(A110101_rate) vs 中学校数 per1000pop(E3101_rate): todofuken(n=47) corr=-0.522 -> shikuchoson(n=1740) corr=0.22
+- 総人口（男） per1000pop(A110101_rate) vs 中学校教員数 per1000pop(E3401_rate): todofuken(n=47) corr=-0.485 -> shikuchoson(n=1740) corr=0.221
+- 総人口（男） per1000pop(A110101_rate) vs 高等学校数 per1000pop(E4101_rate): todofuken(n=47) corr=-0.467 -> shikuchoson(n=1740) corr=0.219
+- 総人口（男） per1000pop(A110101_rate) vs 一般診療所数 per1000pop(I5102_rate): todofuken(n=47) corr=-0.524 -> shikuchoson(n=1740) corr=0.151
+- 総人口（女） per1000pop(A110102_rate) vs 15～64歳人口（女） per1000pop(A130202_rate): todofuken(n=47) corr=-0.292 -> shikuchoson(n=1740) corr=0.09
+- 総人口（女） per1000pop(A110102_rate) vs 死亡数 per1000pop(A4200_rate): todofuken(n=47) corr=0.543 -> shikuchoson(n=1740) corr=-0.178
+- 総人口（女） per1000pop(A110102_rate) vs 小学校数 per1000pop(E2101_rate): todofuken(n=47) corr=0.445 -> shikuchoson(n=1740) corr=-0.171
+- 総人口（女） per1000pop(A110102_rate) vs 小学校教員数 per1000pop(E2401_rate): todofuken(n=47) corr=0.411 -> shikuchoson(n=1740) corr=-0.19
+- 総人口（女） per1000pop(A110102_rate) vs 中学校数 per1000pop(E3101_rate): todofuken(n=47) corr=0.528 -> shikuchoson(n=1740) corr=-0.22
+- 総人口（女） per1000pop(A110102_rate) vs 中学校教員数 per1000pop(E3401_rate): todofuken(n=47) corr=0.483 -> shikuchoson(n=1740) corr=-0.221
+- 総人口（女） per1000pop(A110102_rate) vs 高等学校数 per1000pop(E4101_rate): todofuken(n=47) corr=0.466 -> shikuchoson(n=1740) corr=-0.219
+- 総人口（女） per1000pop(A110102_rate) vs 一般診療所数 per1000pop(I5102_rate): todofuken(n=47) corr=0.503 -> shikuchoson(n=1740) corr=-0.151
+- 日本人人口（男） per1000pop(A110201_rate) vs 一般診療所数 per1000pop(I5102_rate): todofuken(n=47) corr=-0.601 -> shikuchoson(n=1740) corr=0.156
+- 日本人人口（女） per1000pop(A110202_rate) vs 小学校数 per1000pop(E2101_rate): todofuken(n=47) corr=0.553 -> shikuchoson(n=1740) corr=-0.067
+- 日本人人口（女） per1000pop(A110202_rate) vs 小学校教員数 per1000pop(E2401_rate): todofuken(n=47) corr=0.502 -> shikuchoson(n=1740) corr=-0.098
+- 日本人人口（女） per1000pop(A110202_rate) vs 中学校数 per1000pop(E3101_rate): todofuken(n=47) corr=0.631 -> shikuchoson(n=1740) corr=-0.121
