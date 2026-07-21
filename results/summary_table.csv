@@ -194,3 +194,4 @@
 "195","ドイツ","平均年齢のばらつき(標準偏差・範囲)","Bundesland(州)(n=16)","mean=45.54;sd=2.01;range=6.1(42.3-48.4)","Gemeinde(市町村)(n=10659)","mean=46.55;sd=2.72;range=28.0(33.4-61.4)","magnitude_change","範囲が州単位の約4.6倍に拡大。相関ではなく単一変数のばらつきの比較","n/a(not_corr)","n/a(not_corr)"
 "196","EU","pop2018(人口)とgrowth_pct(2018→2023年人口増加率)の相関","NUTS2(n=292)","corr=0.101","NUTS3(n=1374)","corr=0.195","magnitude_change","相対変化0.93。符号は両方プラスのまま","yes","yes"
 "197","フランス","population_totale(総人口)とtemp_resident_pct(一時滞在者比率、totale-municipale)/totaleの相関","Département(県)(n=100)","corr=-0.668","Commune(コミューン)(n=34964)","corr=-0.044","magnitude_change","絶対値でおよそ93%縮小。符号は両方マイナスのまま。学生寮・軍施設・刑務所等で一時的に滞在する人の割合と総人口の関係","yes","yes"
+"198","フランス","births2024(2024年出生数)とgrowth08to24(2008→2024年出生数増減率)の相関","Département(県)(n=100)","corr=0.5385","Commune(コミューン)(n=31078)","corr=0.0117","magnitude_change","2008年出生数0件の地域は増減率計算不能のため除外(県:0件、コミューン:3770件)","yes","yes"
