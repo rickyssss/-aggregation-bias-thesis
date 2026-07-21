@@ -1,0 +1,3 @@
+level,n,pop_mean,pop_sd,male_ratio_mean_pct,male_ratio_sd_pct,corr_pop_vs_male_ratio
+bundesland,16,5216694.8,4820165.3,49.27,0.21,0.357
+gemeinde,10659,5639.6,15362.6,49.96,1.77,-0.110

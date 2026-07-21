@@ -190,3 +190,4 @@ id,country,variable,coarse_level,coarse_stat,fine_level,fine_stat,diff_type,note
 191,フランス,share_social_benefits_pct と share_direct_taxes_pct の相関,県(département)(n=98),corr=0.430,コミューン(commune)(n=5302),corr=0.612,similar,相対変化0.30
 192,オーストラリア,earners(人口規模の目安)とmean_income(平均所得)の相関,州・準州(n=8),corr=0.040,SA2(n=2346),corr=0.151,magnitude_change,両方とも0に近い弱い相関だが相対変化は大きい
 193,オーストラリア,mean_income(平均所得)とgini(ジニ係数)の相関,州・準州(n=8),corr=-0.069,SA2(n=2346),corr=0.377,reversed,
+194,ドイツ,total_population と male_ratio_pct の相関,Bundesland(州)(n=16),corr=0.357,Gemeinde(市町村)(n=10659),corr=-0.110,reversed,2025年12月31日時点。男性割合は男女別人口から算出した派生変数
