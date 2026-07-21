@@ -1,0 +1,7 @@
+level,n,variable,mean,sd,min,max
+state,51,gdp_current_dollars_2024_thousands,571329235.24,728397749.11,46276072.0,4048108136.0
+state,51,gdp_growth_2014_2024_pct,62.77,18.99,26.47,109.97
+county,3104,gdp_current_dollars_2024_thousands,9271686.41,40391027.43,22629.0,1006673239.0
+county,3104,gdp_growth_2014_2024_pct,54.60,41.99,-88.11,722.52
+correlation,state,gdp2024_vs_growth2014_2024,r=0.2220,p=0.1175,n=51,not_significant_at_5pct
+correlation,county,gdp2024_vs_growth2014_2024,r=0.0952,p=1.07e-07,n=3104,significant_at_5pct
