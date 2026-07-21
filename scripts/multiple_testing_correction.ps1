@@ -192,7 +192,7 @@ $top = $tests |
 $report = @"
 # 多重検定補正
 
-`results/summary_table.csv` から抽出できる全ての相関検定に対して、Benjamini-Hochberg 法で false discovery rate を補正した。各行は最大2件の検定、すなわち粗い集計単位の相関と細かい集計単位の相関を持つ。CV比較など、`corr=` ではない行は除外した。
+results/summary_table.csv から抽出できる全ての相関検定に対して、Benjamini-Hochberg 法で false discovery rate を補正した。各行は最大2件の検定、すなわち粗い集計単位の相関と細かい集計単位の相関を持つ。CV比較など、corr= ではない行は除外した。
 
 - 入力行数: $($rows.Count)
 - 補正対象の相関検定数: $m
@@ -217,7 +217,7 @@ $($byDiff -join "`n")
 |---|---|---|---|---:|---:|---:|
 $($top -join "`n")
 
-詳細は `results/multiple_testing_correction.csv` に保存した。
+詳細は results/multiple_testing_correction.csv に保存した。
 "@
 
 Set-Content -Path $reportPath -Value $report -Encoding UTF8
