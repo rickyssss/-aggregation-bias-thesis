@@ -507,3 +507,11 @@
 - **大きさが縮小した例（75-84歳人口の割合 vs 老年化指数）**: 州単位corr=0.946(有意) → 市区町村単位corr=0.503(有意)、正の関係を保ったまま強さが約半分に縮小。
 - **頑健(similar)だった例（0-14歳人口の割合 vs 0-4歳人口の割合）**: 州単位corr=0.893 → 市区町村単位corr=0.713、ほぼ同様の強さ。
 - `similar`と判定された全件も含め`results/summary_table.csv`（id=5272〜5547）に記録済み。詳細は`results/summaries/id5272_5547_switzerland_bfs_pairwise.csv`、経緯は`results/aggregation_effect_log.md`の該当項を参照。
+
+## 2026-07-21: アイルランドCSO 15組み合わせの内訳（reversedは0件、magnitude_change/similarはすべて記録）
+
+- **reversed（符号逆転）**: 0件 / **magnitude_change（大きさが大きく変化）**: 13件 / **similar（ほぼ同様）**: 2件（合計15件）。今回は符号逆転は見られなかったが、指示通り逆転の有無にかかわらず全件を記録。
+- **注目例1（常住者居住比率 vs 一時不在(空き家)比率）**: county(30単位)単位corr=+0.192(有意でない) → Electoral Division(3421単位)単位corr=-0.034(有意)。符号は逆転しているが両方とも|corr|<0.05〜0.2程度と弱いため「reversed」ではなく「magnitude_change」に分類(判定基準: 両方|corr|>0.05のときのみreversed扱い)。
+- **大きさが縮小した例（空き家(住宅)比率 vs 別荘比率）**: county単位corr=0.607(有意) → ED単位corr=0.19(有意)、正の関係を保ったまま強さが約7割縮小。
+- **頑健(similar)だった例（空き家(住宅)比率 vs 空き家率(%)）**: county単位corr=1.0 → ED単位corr=1.0、両者は定義上ほぼ同一の統計量なので内部整合性の確認として妥当な結果。
+- `similar`と判定された全件も含め`results/summary_table.csv`（id=5548〜5562）に記録済み。詳細は`results/summaries/id5548_5562_ireland_cso_pairwise.csv`、経緯は`results/aggregation_effect_log.md`の該当項を参照。

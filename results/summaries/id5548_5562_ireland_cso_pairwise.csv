@@ -1,0 +1,16 @@
+variable,coarse_level,coarse_stat,fine_level,fine_stat,diff_type,coarse_sig,fine_sig
+occupied_residents_per1000 vs occupied_visitors_per1000,county(n=30),corr=-0.663,electoral_division(n=3421),corr=-0.424,magnitude_change,yes,yes
+occupied_residents_per1000 vs vacant_temp_absent_per1000,county(n=30),corr=0.192,electoral_division(n=3421),corr=-0.034,magnitude_change,no,yes
+occupied_residents_per1000 vs vacant_house_apt_per1000,county(n=30),corr=-0.847,electoral_division(n=3421),corr=-0.59,magnitude_change,yes,yes
+occupied_residents_per1000 vs vacant_holiday_home_per1000,county(n=30),corr=-0.933,electoral_division(n=3421),corr=-0.896,similar,yes,yes
+occupied_residents_per1000 vs vacancy_rate_pct,county(n=30),corr=-0.848,electoral_division(n=3421),corr=-0.59,magnitude_change,yes,yes
+occupied_visitors_per1000 vs vacant_temp_absent_per1000,county(n=30),corr=0.34,electoral_division(n=3421),corr=0.15,magnitude_change,no,yes
+occupied_visitors_per1000 vs vacant_house_apt_per1000,county(n=30),corr=0.437,electoral_division(n=3421),corr=0.081,magnitude_change,yes,yes
+occupied_visitors_per1000 vs vacant_holiday_home_per1000,county(n=30),corr=0.641,electoral_division(n=3421),corr=0.392,magnitude_change,yes,yes
+occupied_visitors_per1000 vs vacancy_rate_pct,county(n=30),corr=0.436,electoral_division(n=3421),corr=0.081,magnitude_change,yes,yes
+vacant_temp_absent_per1000 vs vacant_house_apt_per1000,county(n=30),corr=-0.42,electoral_division(n=3421),corr=-0.126,magnitude_change,yes,yes
+vacant_temp_absent_per1000 vs vacant_holiday_home_per1000,county(n=30),corr=-0.092,electoral_division(n=3421),corr=-0.019,magnitude_change,no,no
+vacant_temp_absent_per1000 vs vacancy_rate_pct,county(n=30),corr=-0.422,electoral_division(n=3421),corr=-0.126,magnitude_change,yes,yes
+vacant_house_apt_per1000 vs vacant_holiday_home_per1000,county(n=30),corr=0.607,electoral_division(n=3421),corr=0.19,magnitude_change,yes,yes
+vacant_house_apt_per1000 vs vacancy_rate_pct,county(n=30),corr=1.0,electoral_division(n=3421),corr=1.0,similar,yes,yes
+vacant_holiday_home_per1000 vs vacancy_rate_pct,county(n=30),corr=0.608,electoral_division(n=3421),corr=0.19,magnitude_change,yes,yes

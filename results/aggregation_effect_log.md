@@ -660,4 +660,32 @@ id=29の処理後、`queue/candidate_pairs.csv`にstatus="pending"の行がな�
 
 ### 次回への引き継ぎ
 
+`queue/candidate_pairs.csv`のpending行は今回もありませんでした。次回セッションではベルギー(F5/TSPDボット対策)、アイルランドCSO(REST版ReadCollectionはHTTP 500)、ドイツregionalstatistik(GENESIS-OnlineのPOST方式)、チェコ(正しいデータセットID探索)の再挑戦を検討してください。
+
+---
+
+## 2026-07-21（新規データ源：アイルランド中央統計局(CSO)、County(県・市) vs Electoral Division(選挙区)）
+
+前回までアイルランドCSOはPxStat REST API(`/public/api.restful/PxStat.Data.Cube_API.ReadCollection/en`)を使って表一覧を取得しようとして継続的にHTTP 500エラーになっていましたが、今回、個別の統計表を直接指定して取得するJSON-RPC版API(`https://ws.cso.ie/public/api.jsonrpc/PxStat.Data.Cube_API.ReadDataset`、登録不要、HTTP POSTでJSON-stat2形式が返る)を試したところ正常に応答することを確認しました。表一覧を検索するAPI(ReadCollection)は相変わらず内部エラーでしたが、CSOの統計リリースWebページに掲載されている表コード(F1xxx、F2xxxなど)をWeb検索・WebFetchで探し、そのコードをReadDatasetに直接渡す方式に切り替えることで、ドイツ(GENESIS-OnlineのGASTアカウントはlogincheckのみ許可され、findやcatalogueは権限エラー)より先に実データ取得までたどり着けました。
+
+- **データ元**: CSO Census of Population 2022(2022年アイルランド国勢調査)、Profile 2「住宅」テーマの2表。
+  - 粗い単位: 表F2015「Housing stock and vacancy rate by household type and county and city, 2016 to 2022」→ County and City(県・都市、31単位のうち全国計「State」を除く30単位)、2022年・全世帯タイプ計を使用。
+  - 細かい単位: 表F2095「Housing stock and vacancy rate by Electoral Division, 2022」→ Electoral Division(選挙区、3421単位)。
+  - 2つの表は住宅ストック区分のコード体系(`C02758V03328`: 総住宅数/常住者居住/来訪者のみ居住/一時不在(空き家)/空き家(住宅)/別荘/空き家率)が完全に共通しており、粗密2つの集計単位で全く同じ統計を比較できる珍しい組み合わせでした。
+- **変数**: 総住宅数を分母として、常住者が居住・来訪者のみ居住・一時不在(空き家)・空き家(住宅/アパート)・別荘(セカンドハウス)の5区分を住宅1000戸あたり比率に変換し、CSO公表の空き家率(%)をそのまま加えた合計6変数を作成しました。
+- **結果**: 6変数の総当たり15組み合わせを計算しました。内訳は「reversed(符号逆転)」0件、「magnitude_change(大きさの変化)」13件、「similar(ほぼ同様)」2件で、逆転はありませんでしたが、逆転の有無にかかわらず全15件を`results/summary_table.csv`(id=5548〜5562)に記録しました。
+- **注目した例**:
+  - 「常住者居住比率」と「一時不在(空き家)比率」: county(30単位)単位ではcorr=+0.192(統計的に有意でない)なのに、Electoral Division(3421単位)単位まで細かく見るとcorr=-0.034(ほぼゼロ、有意)に変わりました。符号自体は逆転していますが、|corr|がどちらも0.2未満と弱いため「reversed」ではなく「magnitude_change」に分類されています(判定基準: 両方|corr|>0.05のときのみreversed扱い)。
+  - 「常住者居住比率」と「来訪者のみ居住比率」: county単位corr=-0.663(有意) → ED単位corr=-0.424(有意)、負の関係を保ったまま強さが約4割縮小。
+  - 「空き家(住宅)比率」と「別荘比率」: county単位corr=0.607(有意) → ED単位corr=0.19(有意)、正の関係を保ったまま強さが約7割縮小(かなり大きな縮小)。
+  - 頑健(similar)だった例: 「空き家(住宅)比率」と「空き家率(%)」はcounty単位corr=1.0→ED単位corr=1.0(両者はほぼ同一の統計量の定義違いなので当然の結果、内部整合性の確認として有用)。「常住者居住比率」と「別荘比率」もcounty単位corr=-0.933→ED単位corr=-0.896とほぼ同じ強さを保ちました。
+- **示唆**: アイルランドは全体として「reversed」は見られませんでしたが、county単位(n=30)で見えていた住宅関連指標間の相関の多くが、Electoral Division単位(n=3421)まで細かく見ると軒並り3〜7割程度縮小するパターンが目立ちました。これは、県・市単位では都市部(ダブリン市など)と農村部の平均的な違いが強調されて相関が強く見える一方、選挙区単位まで細かく見ると同じ県内でも地区ごとのばらつきが大きく、集計による人為的な相関の増幅が剥がれることを示しています。デンマークやスイスで見られた「弱い相関が細かい単位でむしろ有意になる」パターンと異なり、アイルランドの住宅データでは一貫して「粗い単位で相関が過大評価される」方向に効果が出ている点が特徴的でした。
+- 使ったデータは`data/Ireland/ireland_cso_coarse_county.csv`(30件)・`data/Ireland/ireland_cso_fine_electoraldivision.csv`(3421件)に保存しました。組み合わせ全件の詳細は`results/summaries/id5548_5562_ireland_cso_pairwise.csv`にあります。
+
+### 次回への引き継ぎ
+
+`queue/candidate_pairs.csv`のpending行は今回もありませんでした。次回セッションでは、アイルランドCSOの他のCensus 2022テーマ(年齢構成・婚姻状況・教育水準など、Profile 3以降)で同様にcounty表とElectoral Division表がペアで存在するものを探す、ドイツregionalstatistik(ゲストアカウントGASTはPOSTでlogincheckのみ成功、findやcatalogueは権限エラー「Code 15」のため要調査)、チェコ(正しいデータセットID探索)、ベルギー(F5/TSPDボット対策の回避)、イタリアIstatData(再接続確認)を検討してください。
+
+### 次回への引き継ぎ
+
 `queue/candidate_pairs.csv`のpending行は今回もありませんでした。次回セッションでは、ベルギー(Statbelのbestat API`https://bestat.statbel.fgov.be/bestat/api/views`は登録不要で応答するが、確認した限りではBelgium/region/province止まりの集計ビューが中心で市区町村(commune)単位のローデータは見当たらなかった。オープンデータのCSV/ZIPダウンロード(`https://statbel.fgov.be/sites/default/files/files/opendata/...`)はF5/TSPDのボット対策ページが返り、curlでは取得不可。ヘッドレスブラウザや別のUser-Agent/Cookie戦略での再試行が今後の課題)、アイルランドCSO(引き続きHTTP 500)、ドイツregionalstatistik(GENESIS-OnlineのPOST方式の確認)、チェコの正しいデータセットID探索、またはスイスの他の指標(国籍構成、出生地、失業率など)の追加を検討してください。
