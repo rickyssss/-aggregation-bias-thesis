@@ -454,3 +454,17 @@
 - **reversed（符号逆転）**: 0件 / **magnitude_change（大きさが大きく変化）**: 1件 / **similar（ほぼ同様）**: 14件（合計15件）
 - 目立った例（唯一のmagnitude_change）: 「世帯あたり平均純所得 vs 消費単位あたり中央値所得」が自治州単位corr=0.585(有意)→市区町村単位corr=0.894(有意)に、正の相関のまま大きく強まった（符号は変わらないが関係の強さが約53%増加）。
 - 今回は6指標すべてが所得水準どうしの組み合わせだったため符号逆転は見られなかったが、`similar`と判定された全件も含め`results/summary_table.csv`（id=4387〜4401）に記録済み。
+
+---
+
+## 2026-07-21: デンマークの「可処分所得の平均額」と「失業給付の平均額」の相関（id=4402〜4726のうち1件）
+
+- **変数**: 1人あたり可処分所得の平均額 と 1人あたり失業給付の平均額（2024年、Statistics Denmark StatBank INDKP101表）
+- **province単位（11件）**: 相関係数 +0.061（ほぼ無相関、有意でない）
+- **kommune単位（98件）**: 相関係数 -0.215（弱いマイナス、有意）
+- **分類**: 符号が逆転（プラス→マイナス）。province単位では見えなかった「所得水準が高い地域ほど失業給付額が低い」という関係が、市町村(kommune)単位まで細かく見ると統計的に有意な形で現れた。
+- **詳細・データ元**: `results/aggregation_effect_log.md` の「2026-07-21（新規データ源：デンマーク統計局(Statistics Denmark) StatBank、province(県) vs kommune(市町村)）」の項、組み合わせ全件は `results/summaries/id4402_4726_denmark_statbank_pairwise.csv` を参照。
+
+- **同種の例（賃金所得 vs 失業給付受給者数）**: province単位corr=+0.183(有意でない) → kommune単位corr=-0.209(有意)、こちらも符号が逆転。
+- **大きさが縮小した例（教育奨学金 vs 公務員年金受給者数）**: province単位corr=-0.781(有意) → kommune単位corr=-0.302(有意)、符号は同じだが絶対値でおよそ6割縮小。
+- 今回の26変数325組のうち、reversed 27件・magnitude_change 166件・similar 132件。逆転・非逆転を問わず全件`results/summary_table.csv`（id=4402〜4726）に記録済み。
