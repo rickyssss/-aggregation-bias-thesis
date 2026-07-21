@@ -1,0 +1,3 @@
+level,n,mean,sd,min,max,range,population_weighted_mean,cv
+state,51,1195.0,277.02,831.0,1868.0,1037.0,1306.21,0.2318
+county,3134,900.18,280.29,297.0,2805.0,2508.0,1310.38,0.3114
