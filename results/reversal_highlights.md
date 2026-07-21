@@ -468,3 +468,13 @@
 - **同種の例（賃金所得 vs 失業給付受給者数）**: province単位corr=+0.183(有意でない) → kommune単位corr=-0.209(有意)、こちらも符号が逆転。
 - **大きさが縮小した例（教育奨学金 vs 公務員年金受給者数）**: province単位corr=-0.781(有意) → kommune単位corr=-0.302(有意)、符号は同じだが絶対値でおよそ6割縮小。
 - 今回の26変数325組のうち、reversed 27件・magnitude_change 166件・similar 132件。逆転・非逆転を問わず全件`results/summary_table.csv`（id=4402〜4726）に記録済み。
+
+---
+
+## 2026-07-21: ポーランドGUS BDL 55組み合わせの内訳（reversed/magnitude_change/similarすべて記録）
+
+- **reversed（符号逆転）**: 2件 / **magnitude_change（大きさが大きく変化）**: 33件 / **similar（ほぼ同様）**: 20件（合計55件）
+- **注目例1（人口1000人あたり純移動数 vs 都市化率）**: voivodeship(県、16単位)単位corr=+0.358(有意でない) → powiat(郡、380単位)単位corr=-0.211(有意)、符号が逆転。県単位では都市化率が高い県ほど人の流入が多いように見えなくもないが、郡単位まで細かく見ると逆に負の関係が有意に現れる。
+- **注目例2（老年従属人口指数 vs 平均賃金の相対水準）**: voivodeship単位corr=-0.251(有意でない) → powiat単位corr=+0.225(有意)、符号が逆転。
+- **大きさが縮小した例（人口1000人あたり純移動数 vs 平均賃金の相対水準）**: voivodeship単位corr=+0.818(有意) → powiat単位corr=+0.155(有意でない)、符号は同じだが強い正の関係がほぼ消失。
+- `similar`と判定された全件も含め`results/summary_table.csv`（id=4727〜4781）に記録済み。詳細は`results/summaries/id4727_4781_poland_bdl_pairwise.csv`、経緯は`results/aggregation_effect_log.md`の該当項を参照。
