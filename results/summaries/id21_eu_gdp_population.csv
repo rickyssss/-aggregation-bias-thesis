@@ -1,0 +1,3 @@
+level,n,gdp_mio_eur_2022_mean,gdp_mio_eur_2022_sd,gdp_mio_eur_2022_min,gdp_mio_eur_2022_max,population_2022_mean,population_2022_sd,population_2022_min,population_2022_max,corr_population_gdp
+NUTS2,286,62755.18,77739.38,1484.72,783456.8,1928196.3,1779420.1,30344,15840900,0.7604
+NUTS3,1318,13617.59,24810.28,210.8,267171.6,418409.8,669709.7,11417,15840900,0.7317
