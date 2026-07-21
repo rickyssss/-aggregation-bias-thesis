@@ -442,3 +442,9 @@
 
 - **reversed（符号逆転）**: 31件 / **magnitude_change（大きさが大きく変化）**: 128件 / **similar（ほぼ同様）**: 12件（合計171件）
 - `similar`と判定された全件も`results/summary_table.csv`（id=4150〜4320）に記録済みです。
+
+## 2026-07-21: スウェーデンSCB 66組み合わせの内訳（reversed/magnitude_change/similarすべて記録）
+
+- **reversed（符号逆転）**: 5件 / **magnitude_change（大きさが大きく変化）**: 42件 / **similar（ほぼ同様）**: 19件（合計66件）
+- 目立った例: 「労働力率 vs 高等教育の割合」が県単位corr=-0.518(有意)→市町村単位corr=-0.040(有意でない)に消失(magnitude_change)。「女性人口比率 vs 基礎教育以下の割合」が県単位corr=0.128(有意でない)→市町村単位corr=-0.376(有意)に符号逆転(reversed)。
+- `similar`と判定された全件も`results/summary_table.csv`（id=4321〜4386）に記録済みです。
