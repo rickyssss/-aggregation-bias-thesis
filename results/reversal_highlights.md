@@ -448,3 +448,9 @@
 - **reversed（符号逆転）**: 5件 / **magnitude_change（大きさが大きく変化）**: 42件 / **similar（ほぼ同様）**: 19件（合計66件）
 - 目立った例: 「労働力率 vs 高等教育の割合」が県単位corr=-0.518(有意)→市町村単位corr=-0.040(有意でない)に消失(magnitude_change)。「女性人口比率 vs 基礎教育以下の割合」が県単位corr=0.128(有意でない)→市町村単位corr=-0.376(有意)に符号逆転(reversed)。
 - `similar`と判定された全件も`results/summary_table.csv`（id=4321〜4386）に記録済みです。
+
+## 2026-07-21: スペインINE 15組み合わせの内訳（reversed/magnitude_change/similarすべて記録）
+
+- **reversed（符号逆転）**: 0件 / **magnitude_change（大きさが大きく変化）**: 1件 / **similar（ほぼ同様）**: 14件（合計15件）
+- 目立った例（唯一のmagnitude_change）: 「世帯あたり平均純所得 vs 消費単位あたり中央値所得」が自治州単位corr=0.585(有意)→市区町村単位corr=0.894(有意)に、正の相関のまま大きく強まった（符号は変わらないが関係の強さが約53%増加）。
+- 今回は6指標すべてが所得水準どうしの組み合わせだったため符号逆転は見られなかったが、`similar`と判定された全件も含め`results/summary_table.csv`（id=4387〜4401）に記録済み。

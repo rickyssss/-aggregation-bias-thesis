@@ -540,3 +540,15 @@ id=29の処理後、`queue/candidate_pairs.csv`にstatus="pending"の行がな�
   - 「女性の人口1000人あたり割合」と「教育水準の中央値所得との関係」: 県単位ではcorr=-0.021（ほぼ無相関、有意でない）なのに、市町村単位ではcorr=0.399（正、有意）に変化（`women_per1000 vs median_income_ksek`の行）。県単位では見えない関係が、市町村まで細かく見ると統計的に有意な形で現れる例です。
   - 「女性の人口1000人あたり割合」と「基礎教育以下の割合」: 県単位ではcorr=0.128（正、有意でない）なのに、市町村単位ではcorr=-0.376（負、有意）に符号が逆転（reversed）しました。
 - 使ったデータは`data/Sweden/sweden_scb_coarse_lan.csv`（21件）・`data/Sweden/sweden_scb_fine_kommun.csv`（290件）に保存しました。組み合わせ全件の詳細は`results/summaries/id4321_4386_sweden_scb_pairwise.csv`にあります。
+
+## 2026-07-21（新規データ源：スペイン統計局(INE) Atlas de distribución de renta de los hogares、comunidad autónoma(自治州) vs municipio(市区町村)）
+
+「最優先で試してほしい新しいデータ源」リストの候補6（スペインINEbase）に着手しました。候補5のイタリアIstatDataは接続できなかったため（詳細は`results/run_errors.md`）、先にこちらを試しました。
+
+- **データ元**: スペイン国家統計局（INE）のwstempus JSON API（`https://servicios.ine.es/wstempus/js/EN/DATOS_TABLA/<table_id>`）。登録不要、HTTP GETでJSON形式が返る。使った統計は「Atlas de distribución de renta de los hogares（家計所得分布アトラス）」というオペレーション（`FK_Operacion=353`）の中の「Mean and median income indicators（平均・中央値所得指標）」という表です。
+- **粒度の見つけ方**: この統計は表が2種類に分かれていました。1つは全国・自治州（Comunidad Autónoma）・県（provincia）を1つにまとめた特別な表（table_id=53689、全77行）で、ここから自治州＋自治都市セウタ・メリリャの計19単位を抽出しました。もう1つは県ごとに分かれた53個の表（Albacete用table_id=30656など）で、それぞれの中にmunicipio（市区町村）・district（地区）・census section（国勢調査区）の3階層が混在していたため、行名に"district"や"section"（またはスペイン語の"sección"）＋数字が含まれる行を正規表現で除外し、municipio単位の行だけを抽出しました。
+- **変数**: 1人あたり平均純所得、世帯あたり平均純所得、消費単位あたり平均所得、消費単位あたり中央値所得、1人あたり平均総所得、世帯あたり平均所得の6指標。いずれも金額の平均・中央値としてすでに公表されている値なので、人口カウントのような「人口1000人あたり変換」は不要でした（今までのカナダ・北欧の教訓を踏まえ、この点は最初に確認しました）。年は2023年（両レベルで最新・共通の年）。
+- **取得トラブル**: 53県表のうち1件（table_id=30824、Albacete県の次に位置する県）はAPIから「No puede mostrarse por restricciones de volumen（データ量制限のため表示不可）」というエラーが返り、取得できませんでした。詳細は`results/run_errors.md`に記録し、残り52県で処理を続行しました。
+- **結果**: 6変数の総当たり15組み合わせを計算しました（自治州19件、市区町村6,735〜8,059件〔指標によって公表されている市区町村数が異なる〕）。内訳は「similar（ほぼ同様）」14件、「magnitude_change（大きさの変化）」1件で、reversed（符号逆転）は0件でした。全15件を`results/summary_table.csv`（id=4387〜4401）に記録しました。
+- **今回の教訓**: 今回選んだ6指標はすべて「所得の水準」を表す指標同士の組み合わせだったため、自治州単位でも市区町村単位でも一貫して強い正の相関（corr=0.58〜0.99）が見られ、符号が逆転する例はありませんでした。これは、集計単位を変えても関係の向き自体は変わらない「安定した」ケースの実例として重要です（このプロジェクトは逆転ケースだけでなく、こうした非逆転ケースも同じ重みで記録する方針のため）。
+- 使ったデータは`data/Spain/ine_atlas_renta_coarse_ccaa.csv`（19件）・`data/Spain/ine_atlas_renta_fine_municipio.csv`（8,137行、県1件欠落分を除く）に保存しました。組み合わせ全件の詳細は`results/summaries/id4387_4401_spain_ine_atlas_renta_pairwise.csv`にあります。
