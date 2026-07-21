@@ -1,0 +1,3 @@
+level,n,mean_gbp,median_gbp,sd_gbp,min_gbp,max_gbp,range_gbp,cv
+region_country,10,279300.0,237750.0,116014.4,152500,535000,382500,0.415
+local_authority,331,318814.6,295000.0,148285.2,116000,1357500,1241500,0.465

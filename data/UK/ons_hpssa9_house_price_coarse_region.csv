@@ -1,0 +1,11 @@
+region_country_code,region_country_name,median_price_paid_year_ending_mar_2023
+E12000001,North East,152500.0
+E12000002,North West,200000.0
+E12000003,Yorkshire and The Humber,192500.0
+E12000004,East Midlands,238000.0
+E12000005,West Midlands,237500.0
+E12000006,East of England,342500.0
+E12000007,London,535000.0
+E12000008,South East,385000.0
+E12000009,South West,310000.0
+W92000004,Wales,200000.0
