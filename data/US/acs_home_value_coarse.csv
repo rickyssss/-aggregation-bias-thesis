@@ -1,0 +1,52 @@
+state_name,state_fips,median_home_value_usd
+Alabama,01,179400
+Alaska,02,318000
+Arizona,04,321400
+Arkansas,05,162400
+California,06,659300
+Colorado,08,465900
+Connecticut,09,323700
+Delaware,10,305200
+District of Columbia,11,705000
+Florida,12,292200
+Georgia,13,245900
+Hawaii,15,764800
+Idaho,16,331600
+Illinois,17,239100
+Indiana,18,183600
+Iowa,19,181600
+Kansas,20,189300
+Kentucky,21,177000
+Louisiana,22,198300
+Maine,23,244800
+Maryland,24,380500
+Massachusetts,25,483900
+Michigan,26,201100
+Minnesota,27,286800
+Mississippi,28,151000
+Missouri,29,199400
+Montana,30,305700
+Nebraska,31,205600
+Nevada,32,373800
+New Hampshire,33,337100
+New Jersey,34,401400
+New Mexico,35,216000
+New York,36,384100
+North Carolina,37,234900
+North Dakota,38,232500
+Ohio,39,183300
+Oklahoma,40,170500
+Oregon,41,423100
+Pennsylvania,42,226200
+Rhode Island,44,343100
+South Carolina,45,216200
+South Dakota,46,219500
+Tennessee,47,232100
+Texas,48,238000
+Utah,49,408500
+Vermont,50,272400
+Virginia,51,339800
+Washington,53,473400
+West Virginia,54,145800
+Wisconsin,55,231400
+Wyoming,56,269900
