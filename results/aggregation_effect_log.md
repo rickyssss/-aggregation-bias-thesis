@@ -313,3 +313,16 @@
 Extracted 34 common variables from SSDSE-B (prefecture) and SSDSE-A (municipality). Initially computed correlations on raw counts, which gave 528/528 similar (all r near 1.0) - this was a methodology bug: raw counts all scale with population size regardless of aggregation level, so it wasn't measuring the aggregation effect at all. Fixed by converting every variable to a per-1000-population rate before computing correlations.
 
 Results after fix (528 pairs): 45 statistically significant reversals, 190 statistically significant magnitude changes. Merged into results/summary_table.csv as id=200 to id=727. Script: scripts/ssdse_full_extract.ps1
+
+---
+
+## 2026-07-21（20回目：id=20 アメリカ・貧困率と世帯所得中位値）
+
+`queue/candidate_pairs.csv`のid=20（アメリカ、貧困率・世帯所得中位値（SAIPE, Small Area Income and Poverty Estimates）、州(State) vs 郡(County)）を処理しました。
+
+- データ元: notesに記載の通り、U.S. Census Bureauの公式ファイル`https://www2.census.gov/programs-surveys/saipe/datasets/2023/2023-state-and-county/est23all.xls`（約1.1MB、2023年推計、2024年12月公表分）をcurlで直接ダウンロードしたところHTTP 200で取得できました。1つのxlsファイルの中に、郡コードが"000"の州行（51件、50州+DC）と、郡コードがそれ以外の郡行（3,143件）が同じ形式で混在しており、郡コードの値で両方を抽出できました（全国合計行「United States」は州コードが"00"のため除外）。元ファイル自体はリポジトリには保存せず、`data/USA/coarse.csv`（州51件）・`data/USA/fine.csv`（郡3,143件）として、貧困率・世帯所得中位値の列だけを抽出した小さなCSVのみを残しました。
+- 使った変数: 「貧困率（Poverty Percent, All Ages、%）」と「世帯所得中位値（Median Household Income、ドル）」の相関です。所得が低い地域ほど貧困率が高くなるという、直感的にわかりやすい関係を見ました。
+- 州単位（51件）で見ると、貧困率の平均は12.20%（標準偏差2.52ポイント、最小7.3%〜最大18.9%）、世帯所得中位値の平均は77,593ドル（標準偏差12,745ドル）でした。貧困率と世帯所得中位値の相関係数は **-0.6917**（中程度〜やや強いマイナスの相関、所得が高い州ほど貧困率が低い）でした。
+- 郡単位（3,143件）で見ると、貧困率の平均は14.49%（標準偏差5.55ポイントと州単位よりばらつきが大きく、最小3.3%〜最大49.6%まで幅広い）、世帯所得中位値の平均は65,562ドル（標準偏差16,543ドル）でした。相関係数は **-0.7632**（州単位よりやや強いマイナスの相関）でした。
+- まとめ: 符号はどちらもマイナスのままで逆転はせず、相関の強さも-0.6917→-0.7632と、相対的には約+10%とやや強まった程度で、大きな変化とは言えませんでした。州単位・郡単位のどちらでも「所得が低い地域ほど貧困率が高い」というはっきりした関係が同じように見え、これまで扱ってきたドイツの平均年齢(id=14)やフランスの出生数(id=17)のように集計単位で関係が大きく薄まる・逆転するケースとは異なり、集計単位を変えてもほぼ同じ結論になる例でした。統計的な有意性チェック（両側t検定、有意水準5%）では州単位（n=51、t≈-6.70）・郡単位（n=3,143、t≈-66.2）のどちらも極めて有意でした。分類は「similar（ほぼ同じ）」としました。
+- 使った要約統計量は `results/summaries/id20_usa_poverty_income.csv` に保存しました。

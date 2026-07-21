@@ -726,3 +726,4 @@
 "725","Japan","一般病院数 per1000pop(I510120_rate) vs 一般診療所数 per1000pop(I5102_rate)","todofuken(n=47)","corr=0.227","shikuchoson(n=1740)","corr=-0.098","reversed","SSDSE-B(2023)/SSDSE-A extraction, part of exhaustive pairwise scan","no","yes"
 "726","Japan","一般病院数 per1000pop(I510120_rate) vs 歯科診療所数 per1000pop(I5103_rate)","todofuken(n=47)","corr=0.08","shikuchoson(n=1740)","corr=0.033","magnitude_change","SSDSE-B(2023)/SSDSE-A extraction, part of exhaustive pairwise scan","no","no"
 "727","Japan","一般診療所数 per1000pop(I5102_rate) vs 歯科診療所数 per1000pop(I5103_rate)","todofuken(n=47)","corr=0.472","shikuchoson(n=1740)","corr=0.289","magnitude_change","SSDSE-B(2023)/SSDSE-A extraction, part of exhaustive pairwise scan","yes","yes"
+"728","アメリカ","貧困率(Poverty Percent)と世帯所得中位値(Median Household Income)の相関","州(n=51)","corr=-0.6917","郡(n=3143)","corr=-0.7632","similar","SAIPE 2023, est23all.xls。相対変化+10.3%、符号同じ、統計的にはどちらも有意(p<<0.001)","yes","yes"

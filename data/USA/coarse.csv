@@ -1,0 +1,52 @@
+state_fips,postal,name,poverty_percent_all_ages,median_household_income
+01,AL,Alabama,15.7,62248.0
+02,AK,Alaska,10.5,88696.0
+04,AZ,Arizona,12.6,77158.0
+05,AR,Arkansas,15.4,58748.0
+06,CA,California,12.0,95473.0
+08,CO,Colorado,9.4,92790.0
+09,CT,Connecticut,10.2,91477.0
+10,DE,Delaware,10.8,81615.0
+11,DC,District of Columbia,15.2,104643.0
+12,FL,Florida,12.4,73283.0
+13,GA,Georgia,13.7,74521.0
+15,HI,Hawaii,10.2,96716.0
+16,ID,Idaho,10.1,74859.0
+17,IL,Illinois,11.6,80346.0
+18,IN,Indiana,12.2,69458.0
+19,IA,Iowa,11.1,71662.0
+20,KS,Kansas,11.2,70316.0
+21,KY,Kentucky,16.1,61099.0
+22,LA,Louisiana,18.9,58273.0
+23,ME,Maine,10.5,73463.0
+24,MD,Maryland,9.7,98568.0
+25,MA,Massachusetts,10.5,99750.0
+26,MI,Michigan,13.5,69097.0
+27,MN,Minnesota,9.2,85070.0
+28,MS,Mississippi,18.3,54386.0
+29,MO,Missouri,12.0,68484.0
+30,MT,Montana,11.8,70939.0
+31,NE,Nebraska,10.2,74727.0
+32,NV,Nevada,12.2,76332.0
+33,NH,New Hampshire,7.3,97031.0
+34,NJ,New Jersey,9.7,99716.0
+35,NM,New Mexico,16.9,62286.0
+36,NY,New York,14.1,82052.0
+37,NC,North Carolina,12.8,70838.0
+38,ND,North Dakota,10.0,77346.0
+39,OH,Ohio,13.2,67873.0
+40,OK,Oklahoma,15.8,62120.0
+41,OR,Oregon,12.1,80061.0
+42,PA,Pennsylvania,11.9,73826.0
+44,RI,Rhode Island,11.4,83518.0
+45,SC,South Carolina,13.9,67988.0
+46,SD,South Dakota,11.4,72794.0
+47,TN,Tennessee,13.8,67651.0
+48,TX,Texas,13.7,75778.0
+49,UT,Utah,9.0,93030.0
+50,VT,Vermont,9.9,80626.0
+51,VA,Virginia,10.2,89864.0
+53,WA,Washington,10.3,94553.0
+54,WV,West Virginia,16.4,55875.0
+55,WI,Wisconsin,10.6,74671.0
+56,WY,Wyoming,10.4,73558.0
