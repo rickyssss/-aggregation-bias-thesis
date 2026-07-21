@@ -498,3 +498,12 @@
 - **大きさが縮小した例（75-84歳人口の割合 vs 年少人口指数）**: landshluti単位corr=+0.741(有意) → sveitarfélög単位corr=-0.106(有意でない)、有意な正の関係が市区町村単位でほぼ消失。
 - **頑健(similar)だった例（0-14歳人口の割合 vs 10-14歳人口の割合）**: landshluti単位corr=0.827(有意) → sveitarfélög単位corr=0.836(有意)、ほぼ同じ強さ。
 - `similar`と判定された全件も含め`results/summary_table.csv`（id=5082〜5271）に記録済み。詳細は`results/summaries/id5082_5271_iceland_hagstofa_pairwise.csv`、経緯は`results/aggregation_effect_log.md`の該当項を参照。
+
+## 2026-07-21: スイス連邦統計局(FSO/BFS) 276組み合わせの内訳（reversed/magnitude_change/similarすべて記録）
+
+- **reversed（符号逆転）**: 33件 / **magnitude_change（大きさが大きく変化）**: 148件 / **similar（ほぼ同様）**: 95件（合計276件）
+- **注目例1（15-64歳人口の割合 vs 男性人口の割合）**: 州(26単位)単位corr=-0.241(有意でない) → 市区町村(2130単位)単位corr=+0.145(有意)。州単位ではノイズに埋もれていた弱い関係が、市区町村単位のサンプル数増加で統計的に検出可能になった例。
+- **注目例2（65-74歳人口の割合 vs 離婚者の割合）**: 州単位corr=-0.265(有意でない) → 市区町村単位corr=+0.223(有意)、同様のパターンで符号逆転かつ有意性も逆転。
+- **大きさが縮小した例（75-84歳人口の割合 vs 老年化指数）**: 州単位corr=0.946(有意) → 市区町村単位corr=0.503(有意)、正の関係を保ったまま強さが約半分に縮小。
+- **頑健(similar)だった例（0-14歳人口の割合 vs 0-4歳人口の割合）**: 州単位corr=0.893 → 市区町村単位corr=0.713、ほぼ同様の強さ。
+- `similar`と判定された全件も含め`results/summary_table.csv`（id=5272〜5547）に記録済み。詳細は`results/summaries/id5272_5547_switzerland_bfs_pairwise.csv`、経緯は`results/aggregation_effect_log.md`の該当項を参照。

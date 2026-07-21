@@ -22,3 +22,11 @@
   - チェコ ČSÚ VDB API（`https://vdb.czso.cz/pll/eweb/package_show?id=130141-24`）: HTTP 200だが`{"success": false, "error": {"message": "Dataset Not Found"}}`（データセットIDが不正または存在しない）。
 - **対応**: 3つとも今回は見送り、代わりにポルトガル国家統計院(INE)の指標API（`https://www.ine.pt/ine/json_indicador/pindica.jsp`）を試したところ正常に応答したため、そちらを採用した（NUTS3 vs 市区町村、詳細は`results/aggregation_effect_log.md`参照）。
 - **今後の課題**: アイルランドは時間を置いて再試行（一時的なサーバー障害の可能性）、ドイツはGENESIS-OnlineのREST APIドキュメントを確認しPOSTリクエストや別のログイン方式を試す、チェコは正しいデータセットID(パッケージ名)をVDBのカタログ検索エンドポイントから探すこと。
+
+## 2026-07-21: ベルギーStatbelオープンデータ(ZIP/XLSX)がボット対策で取得不可、アイルランドCSOは引き続きHTTP 500
+
+- **状況**: 新規データ源としてベルギー国家統計院(Statbel)を試した。`bestat.statbel.fgov.be`のbestat API(`/bestat/api/views`)は登録不要でJSON応答が返り正常に動作したが、確認できた1341件のビュー(表)はいずれもBelgium全体/地域(region)/州(province)レベルの集計ダッシュボードが中心で、市区町村(commune、581)単位の生データテーブルは見当たらなかった。
+- WebFetch経由でStatbelのオープンデータカタログページ(`https://statbel.fgov.be/en/open-data`)を確認したところ、市区町村単位の人口構造データ(`TF_SOC_POP_STRUCT_2026.zip`、居住地・国籍・婚姻状態・年齢・性別)のダウンロードURLが判明したが、curlで直接取得すると常にF5/TSPD(Akamai系ボット対策)のJavaScriptチャレンジページ(HTMLで`window["bobcmn"]`のようなスクリプトが埋め込まれたページ)が返り、実データ(ZIP/XLSX)を取得できなかった。User-Agentヘッダを変更しても同様。TLS/JA3フィンガープリントベースのボット判定と推測され、curlでは回避困難。
+- 併せてアイルランドCSO PxStat API(`https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadCollection/en`)を再試行したが、引き続きHTTP 500 InternalServerErrorだった。
+- **対応**: ベルギー・アイルランドともに今回は見送り、代わりにスイス連邦統計局(FSO/BFS)のPxWeb API(`www.pxweb.bfs.admin.ch`)が正常に動作したため、そちらを採用した(canton州 vs commune市区町村、詳細は`results/aggregation_effect_log.md`参照)。
+- **今後の課題**: ベルギーは、ヘッドレスブラウザ(Playwright)経由でのダウンロードや、bestat APIの中に隠れている市区町村単位の生データテーブル(views一覧に出ないもの)がないか、Statbelの別のAPIエンドポイント(例えば `https://statbel.fgov.be/en/open-data` のsitemap的なJSON API)を探すこと。アイルランドは時間を置いてさらに再試行するか、CSO Data and Information HubのAPI (`https://data.cso.ie/`) など別のエンドポイントを試すこと。
