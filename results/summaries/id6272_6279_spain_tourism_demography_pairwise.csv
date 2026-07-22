@@ -1,0 +1,9 @@
+variable,coarse_level,coarse_stat,fine_level,fine_stat,diff_type,coarse_sig,fine_sig
+nights_spent_per1000pop vs total_dependency_ratio_per1000,nuts2(n=19),corr=-0.505,nuts3(n=59),corr=-0.602,similar,yes,yes
+nights_spent_per1000pop vs old_age_dependency_ratio_per1000,nuts2(n=19),corr=-0.258,nuts3(n=59),corr=-0.461,magnitude_change,no,yes
+nights_spent_per1000pop vs youth_dependency_ratio_per1000,nuts2(n=19),corr=-0.338,nuts3(n=59),corr=-0.242,similar,no,no
+nights_spent_per1000pop vs median_age_years,nuts2(n=19),corr=-0.067,nuts3(n=59),corr=-0.313,magnitude_change,no,yes
+nights_spent_per1000pop vs females_per1000_males,nuts2(n=19),corr=-0.09,nuts3(n=59),corr=-0.332,magnitude_change,no,yes
+nights_spent_per1000pop vs young_0_14_per1000,nuts2(n=19),corr=-0.2,nuts3(n=59),corr=-0.024,magnitude_change,no,no
+nights_spent_per1000pop vs elderly_65plus_per1000,nuts2(n=19),corr=-0.214,nuts3(n=59),corr=-0.455,magnitude_change,no,yes
+nights_spent_per1000pop vs oldest_80plus_per1000,nuts2(n=19),corr=-0.259,nuts3(n=59),corr=-0.479,magnitude_change,no,yes

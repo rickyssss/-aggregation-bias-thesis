@@ -1,0 +1,5 @@
+geo,nights_spent_per1000pop,total_dependency_ratio_per1000,old_age_dependency_ratio_per1000,youth_dependency_ratio_per1000,median_age_years,females_per1000_males,young_0_14_per1000,elderly_65plus_per1000,oldest_80plus_per1000
+SK01,3499.42,548.0,290.0,258.0,42.9,1075.0,167.0,187.0,38.0
+SK02,1799.61,525.0,310.0,215.0,45.0,1043.0,141.0,203.0,40.0
+SK03,3737.03,520.0,288.0,232.0,43.3,1043.0,152.0,189.0,37.0
+SK04,2317.39,532.0,260.0,272.0,40.4,1033.0,178.0,170.0,33.0
