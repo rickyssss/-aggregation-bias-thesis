@@ -1,0 +1,9 @@
+variable,coarse_level,coarse_stat,fine_level,fine_stat,diff_type,coarse_sig,fine_sig
+employment_rate_per1000 vs total_dependency_ratio_per1000,nuts2(n=21),corr=0.223,nuts3(n=107),corr=0.002,magnitude_change,no,no
+employment_rate_per1000 vs old_age_dependency_ratio_per1000,nuts2(n=21),corr=0.114,nuts3(n=107),corr=-0.003,magnitude_change,no,no
+employment_rate_per1000 vs youth_dependency_ratio_per1000,nuts2(n=21),corr=0.107,nuts3(n=107),corr=0.012,magnitude_change,no,no
+employment_rate_per1000 vs median_age_years,nuts2(n=21),corr=0.166,nuts3(n=107),corr=0.084,magnitude_change,no,no
+employment_rate_per1000 vs females_per1000_males,nuts2(n=21),corr=-0.175,nuts3(n=107),corr=0.02,magnitude_change,no,no
+employment_rate_per1000 vs young_0_14_per1000,nuts2(n=21),corr=0.055,nuts3(n=107),corr=0.008,magnitude_change,no,no
+employment_rate_per1000 vs elderly_65plus_per1000,nuts2(n=21),corr=0.085,nuts3(n=107),corr=-0.001,magnitude_change,no,no
+employment_rate_per1000 vs oldest_80plus_per1000,nuts2(n=21),corr=0.479,nuts3(n=107),corr=0.335,similar,yes,yes
