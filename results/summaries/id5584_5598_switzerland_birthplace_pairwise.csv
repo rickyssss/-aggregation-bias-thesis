@@ -1,0 +1,16 @@
+variable,coarse_level,coarse_stat,fine_level,fine_stat,diff_type,coarse_sig,fine_sig
+born_switzerland_per1000 vs born_abroad_per1000,canton(n=26),corr=-1.0,commune(n=2131),corr=-1.0,similar,yes,yes
+born_switzerland_per1000 vs born_switzerland_male_per1000,canton(n=26),corr=0.996,commune(n=2131),corr=0.969,similar,yes,yes
+born_switzerland_per1000 vs born_switzerland_female_per1000,canton(n=26),corr=0.994,commune(n=2131),corr=0.965,similar,yes,yes
+born_switzerland_per1000 vs born_abroad_male_per1000,canton(n=26),corr=-0.997,commune(n=2131),corr=-0.986,similar,yes,yes
+born_switzerland_per1000 vs born_abroad_female_per1000,canton(n=26),corr=-0.998,commune(n=2131),corr=-0.986,similar,yes,yes
+born_abroad_per1000 vs born_switzerland_male_per1000,canton(n=26),corr=-0.996,commune(n=2131),corr=-0.969,similar,yes,yes
+born_abroad_per1000 vs born_switzerland_female_per1000,canton(n=26),corr=-0.994,commune(n=2131),corr=-0.965,similar,yes,yes
+born_abroad_per1000 vs born_abroad_male_per1000,canton(n=26),corr=0.997,commune(n=2131),corr=0.986,similar,yes,yes
+born_abroad_per1000 vs born_abroad_female_per1000,canton(n=26),corr=0.998,commune(n=2131),corr=0.986,similar,yes,yes
+born_switzerland_male_per1000 vs born_switzerland_female_per1000,canton(n=26),corr=0.98,commune(n=2131),corr=0.869,similar,yes,yes
+born_switzerland_male_per1000 vs born_abroad_male_per1000,canton(n=26),corr=-0.991,commune(n=2131),corr=-0.954,similar,yes,yes
+born_switzerland_male_per1000 vs born_abroad_female_per1000,canton(n=26),corr=-0.995,commune(n=2131),corr=-0.956,similar,yes,yes
+born_switzerland_female_per1000 vs born_abroad_male_per1000,canton(n=26),corr=-0.993,commune(n=2131),corr=-0.952,similar,yes,yes
+born_switzerland_female_per1000 vs born_abroad_female_per1000,canton(n=26),corr=-0.991,commune(n=2131),corr=-0.95,similar,yes,yes
+born_abroad_male_per1000 vs born_abroad_female_per1000,canton(n=26),corr=0.99,commune(n=2131),corr=0.945,similar,yes,yes
