@@ -1,4 +1,10 @@
 
+## 2026-07-22: 発表期限（本日正午）を過ぎている可能性についての注記(データ追加作業は今回見送り)
+
+- **状況**: この定期実行タスク（毎時実行の"AggregationBias - Daily Queue Runner"）の指示文には「発表は2026年7月22日(明日)正午なので、できるだけ多くのデータを積み増すことを最優先してください」とあるが、この指示文が最後に更新されたのは2026-07-21 13:39 UTC(その時点での「明日」=2026-07-22)。今回の実行時刻は2026-07-22 06:14 UTC(=日本時間15:14)であり、もし「正午」が日本時間を指すなら、発表予定時刻(日本時間正午=UTC 03:00)はすでに3時間以上前に過ぎている。
+- **対応**: ユーザー本人にプッシュ通知で状況を確認中のため、今回のサイクルでは新規データ取得・summary_table.csvへの追記は見送った(無駄になる可能性がある作業に時間を使わないため)。既存データやこれまでの成果には一切手を加えていない。
+- **今後の課題**: ユーザーから継続の指示があれば次回以降のサイクルで通常通りデータ追加を再開する。発表がすでに終わっている、または今後不要と判断された場合は、毎時実行のルーティン("AggregationBias - Daily Queue Runner"、trig_01RZMG4aazRqmrgMBZ7a2UY5)を停止することを検討する。
+
 ## 2026-07-21: スペインINE Atlas de distribución de renta、県表1件(table_id=30824)が取得失敗
 
 - **状況**: 「最優先で試してほしい新しいデータ源」候補6（スペインINEbase）に着手。INEのwstempus JSON API（`https://servicios.ine.es/wstempus/js/EN/DATOS_TABLA/<table_id>`）で「Atlas de distribución de renta de los hogares」の県別municipio内訳表（53県表、table_id=30656〜31295）を順に取得中、`table_id=30824`（県順で2番目、Albacete=30656の次に位置する県）のみHTTP 200だが本文が`{"status" : "No puede mostrarse por restricciones de volumen"}`（データ量制限のため表示不可）というエラー応答だった。
