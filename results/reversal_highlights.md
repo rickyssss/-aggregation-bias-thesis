@@ -523,3 +523,19 @@
 - **注目例2（非定住人口比率 vs スイス国籍女性比率）**: 州単位corr=-0.105(有意でない) → 市区町村単位corr=-0.357(有意)、大きさが3倍以上に拡大し有意性も新たに現れた。
 - **頑健(similar)だった例（スイス国籍比率 vs 外国籍比率）**: 州単位corr=-0.995(有意) → 市区町村単位corr=-0.982(有意)、定義上ほぼ完全な負の相関を保ち内部整合性の確認として妥当。
 - `similar`と判定された全件も含め`results/summary_table.csv`（id=5563〜5583）に記録済み。詳細は`results/summaries/id5563_5583_switzerland_citizenship_pairwise.csv`、経緯は`results/aggregation_effect_log.md`の該当項を参照。
+
+## 2026-07-22: スイスFSO/BFS(出生地拡張) 15組み合わせの内訳（reversed・magnitude_changeはともに0件）
+
+- **reversed（符号逆転）**: 0件 / **magnitude_change（大きさが大きく変化）**: 0件 / **similar（ほぼ同様）**: 15件（合計15件）。今回は逆転も大きな変化も見られず、指示通り全件を記録。
+- **最も変化が大きかった例（スイス国内出生男性比率 vs スイス国内出生女性比率）**: 州(26単位)単位corr=0.98(有意) → 市区町村(2131単位)単位corr=0.869(有意)、相対変化11.3%で「similar」の中では最大の縮小幅。
+- **頑健(similar)だった例（スイス国内出生比率 vs 国外出生比率）**: 州単位corr=-1.0 → 市区町村単位corr=-1.0、定義上の完全な相補関係のため不変。
+- `similar`と判定された全件も含め`results/summary_table.csv`（id=5584〜5598）に記録済み。詳細は`results/summaries/id5584_5598_switzerland_birthplace_pairwise.csv`、経緯は`results/aggregation_effect_log.md`の該当項を参照。
+
+## 2026-07-22: スイスFSO/BFS(国籍別:主要移民出身国) 15組み合わせの内訳（reversed 1件・magnitude_change 12件）
+
+- **reversed（符号逆転）**: 1件 / **magnitude_change（大きさが大きく変化）**: 12件 / **similar（ほぼ同様）**: 2件（合計15件）。
+- **注目例1（ポルトガル国籍者比率 vs コソボ国籍者比率、符号逆転）**: 州(26単位)単位corr=-0.155(有意でない) → 市区町村(2131単位)単位corr=+0.116(有意)。両方とも|corr|>0.05のため「reversed」判定。州単位では2つの移民コミュニティが分散して負の(弱い)関係に見えるが、市区町村単位まで見ると同じ地区に集住する傾向が正の関係として表れる。
+- **注目例2（ドイツ国籍者比率 vs ポルトガル国籍者比率）**: 州単位corr=-0.639(有意) → 市区町村単位corr=-0.29(有意)、負の関係を保ったまま強さが半分以下に縮小。
+- **注目例3（フランス国籍者比率 vs スペイン国籍者比率）**: 州単位corr=0.793(有意) → 市区町村単位corr=0.457(有意)、正の関係を保ったまま強さが約4割縮小。
+- **注目例4（イタリア国籍者比率 vs コソボ国籍者比率）**: 州単位corr=-0.037(有意でない) → 市区町村単位corr=0.178(有意)、州単位ではノイズに埋もれていた関係が市区町村単位で検出可能に。
+- `similar`と判定された全件も含め`results/summary_table.csv`（id=5599〜5613）に記録済み。詳細は`results/summaries/id5599_5613_switzerland_nationality_pairwise.csv`、経緯は`results/aggregation_effect_log.md`の該当項を参照。

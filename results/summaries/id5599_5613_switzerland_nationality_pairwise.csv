@@ -1,0 +1,16 @@
+variable,coarse_level,coarse_stat,fine_level,fine_stat,diff_type,coarse_sig,fine_sig
+italy_citizens_per1000 vs germany_citizens_per1000,canton(n=26),corr=-0.152,commune(n=2131),corr=-0.073,magnitude_change,no,yes
+italy_citizens_per1000 vs portugal_citizens_per1000,canton(n=26),corr=-0.037,commune(n=2131),corr=0.115,magnitude_change,no,yes
+italy_citizens_per1000 vs france_citizens_per1000,canton(n=26),corr=-0.032,commune(n=2131),corr=-0.069,magnitude_change,no,yes
+italy_citizens_per1000 vs kosovo_citizens_per1000,canton(n=26),corr=-0.037,commune(n=2131),corr=0.178,magnitude_change,no,yes
+italy_citizens_per1000 vs spain_citizens_per1000,canton(n=26),corr=0.042,commune(n=2131),corr=0.166,magnitude_change,no,yes
+germany_citizens_per1000 vs portugal_citizens_per1000,canton(n=26),corr=-0.639,commune(n=2131),corr=-0.29,magnitude_change,yes,yes
+germany_citizens_per1000 vs france_citizens_per1000,canton(n=26),corr=-0.621,commune(n=2131),corr=-0.449,similar,yes,yes
+germany_citizens_per1000 vs kosovo_citizens_per1000,canton(n=26),corr=0.243,commune(n=2131),corr=0.165,magnitude_change,no,yes
+germany_citizens_per1000 vs spain_citizens_per1000,canton(n=26),corr=-0.242,commune(n=2131),corr=-0.162,magnitude_change,no,yes
+portugal_citizens_per1000 vs france_citizens_per1000,canton(n=26),corr=0.812,commune(n=2131),corr=0.423,magnitude_change,yes,yes
+portugal_citizens_per1000 vs kosovo_citizens_per1000,canton(n=26),corr=-0.155,commune(n=2131),corr=0.116,reversed,no,yes
+portugal_citizens_per1000 vs spain_citizens_per1000,canton(n=26),corr=0.452,commune(n=2131),corr=0.436,similar,yes,yes
+france_citizens_per1000 vs kosovo_citizens_per1000,canton(n=26),corr=-0.028,commune(n=2131),corr=-0.121,magnitude_change,no,yes
+france_citizens_per1000 vs spain_citizens_per1000,canton(n=26),corr=0.793,commune(n=2131),corr=0.457,magnitude_change,yes,yes
+kosovo_citizens_per1000 vs spain_citizens_per1000,canton(n=26),corr=0.101,commune(n=2131),corr=0.186,magnitude_change,no,yes
