@@ -779,3 +779,23 @@ id=29の処理後、`queue/candidate_pairs.csv`にstatus="pending"の行がな�
 ### 次回への引き継ぎ
 
 `queue/candidate_pairs.csv`のpending行は今回もありませんでした。次回は、イタリアについてEurostatの他の指標(出生率・死亡率・移動率のNUTS3版demo_r_gind3は既にEU全体データに含まれているので、雇用・失業率・教育水準などNUTS2/NUTS3対応表)を追加するか、スペインINEの所得以外の市町村指標(人口構成・外国人比率・世帯構成など)、またはニュージーランドStats NZ・オーストリアStatistik Austria・スロベニアSURSといった未着手の国を優先的に検討してください。
+
+---
+
+## 2026-07-22（新規データ源：イタリアIstatData、regione vs comuneの年齢別人口）
+
+上のEurostat経由のイタリアデータとは別に、イタリア国家統計局(Istat)本体のIstatData SDMX API（`https://esploradati.istat.it/SDMXWS/rest/`）を再試行しました。IstatのAPIはレスポンスが遅く、ドキュメント上も5リクエスト/分の制限があるため、15秒以上あけながら小さく分割して取得しました。大きな一括リクエストやグループ年齢階級（例: 0-14歳）は`NoRecordsFound`または接続切断になりましたが、単歳の年齢コードは地域・市町村の両方で取得できました。
+
+- **データ元**: IstatData SDMX APIのresident population on 1 January（2025年）。粗い単位は`22_289_DF_DCIS_POPRES1_2`（Italy, regions, provinces）からNUTS2相当のregione 21件を抽出しました（Bolzano/Trentoは自治県として地域レベルに含め、重複する`ITDA`と`ITZZ`は除外）。細かい単位は`22_289_DF_DCIS_POPRES1_24`（All municipalities by age）からcomune 7,896件を取得しました。
+- **変数**: 年齢0歳、14歳、30歳、50歳、65歳、85歳、100歳以上の人数を、それぞれ総人口1000人あたりの比率に変換しました。Istatのこの表では0-14歳などのグループ階級が実データとして返らなかったため、今回は「単歳人口の構成比」を比較しています。人口の生カウントは相関計算に使っていません。
+- **結果**: 7変数の総当たり21組み合わせを計算しました。内訳は「reversed（符号逆転）」2件、「magnitude_change（大きさの変化）」19件、「similar（ほぼ同様）」0件で、全21件を`results/summary_table.csv`（id=5687〜5707）に記録しました。
+- **注目した例**:
+  - 「14歳人口比率」と「50歳人口比率」: regione単位ではcorr=-0.173（有意でない）なのに、comune単位ではcorr=+0.156（有意）に符号が逆転しました。弱い相関ですが、地域単位ではならされていた年齢構成の局所差が市町村単位では見える例です。
+  - 「50歳人口比率」と「85歳人口比率」: regione単位corr=+0.278（有意でない）からcomune単位corr=-0.115（有意）へ符号が逆転しました。
+  - 「0歳人口比率」と「30歳人口比率」: regione単位corr=+0.869（有意）からcomune単位corr=+0.162（有意）へ、正の関係を保ったまま大きく縮小しました。州レベルでは「若い親世代が多い地域ほど出生直後の子も多い」という関係が強く見えますが、市町村単位では同じ州内の都市・郊外・山間部の差が大きく、関係がかなり弱まります。
+- **示唆**: IstatData本体から直接、regione vs comuneの比較を作れた点が今回の大きな前進です。結果は、Eurostat経由のNUTS2 vs NUTS3データよりも細かいcomune単位を使うため、相関の縮小や符号逆転がはっきり出ました。特に単歳人口比率のような細かい指標は、小さな市町村では人数が少なく偶然のばらつきも大きいため、粗い地域単位で強く見えた年齢構成の関係が市町村単位で弱まる傾向が目立ちます。
+- 使ったデータは`data/Italy/istat_population_age_coarse_region.csv`（21件）・`data/Italy/istat_population_age_fine_comune.csv`（7,896件）に保存しました。組み合わせ全件の詳細は`results/summaries/id5687_5707_italy_istat_population_age_pairwise.csv`にあります。
+
+### 次回への引き継ぎ
+
+IstatDataは使えることが確認できましたが、大きな一括取得は切断されやすいため、今後も表ごとに小さく分割し、15秒以上間隔をあけて取得する必要があります。次回はIstatDataで住宅・銀行サービス・交通事故など、市町村単位の別テーマを探すとよいです。

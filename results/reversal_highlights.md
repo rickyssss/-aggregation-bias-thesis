@@ -547,3 +547,11 @@
 - **大きさが縮小した例（18〜64歳人口比率 vs 人口増減率）**: lan単位corr=+0.790(有意) → kommun単位corr=+0.521(有意)。働く年齢層が多い地域ほど人口が増えやすい関係は残るが、県単位では関係が強めに見える。
 - **大きさがほぼ消えた例（男性比率 vs 離婚者比率）**: lan単位corr=-0.455(有意) → kommun単位corr=-0.051(有意でない)。県単位で見えていた関係が、市町村単位ではほぼ無関係になった。
 - `similar`と判定された全件も含め`results/summary_table.csv`（id=5614〜5658）に記録済み。詳細は`results/summaries/id5614_5658_sweden_scb_population_pairwise.csv`、経緯は`results/aggregation_effect_log.md`の該当項を参照。
+
+## 2026-07-22: イタリアIstatData単歳人口構成 21組み合わせの内訳（reversed/magnitude_changeをすべて記録）
+
+- **reversed（符号逆転）**: 2件 / **magnitude_change（大きさが大きく変化）**: 19件 / **similar（ほぼ同様）**: 0件（合計21件）。逆転・非逆転を問わず全件を記録。
+- **注目例1（14歳人口比率 vs 50歳人口比率）**: regione(21単位)単位corr=-0.173(有意でない) → comune(7,896単位)単位corr=+0.156(有意)、弱いが符号が逆転。
+- **注目例2（50歳人口比率 vs 85歳人口比率）**: regione単位corr=+0.278(有意でない) → comune単位corr=-0.115(有意)、こちらも符号が逆転。
+- **大きさが縮小した例（0歳人口比率 vs 30歳人口比率）**: regione単位corr=+0.869(有意) → comune単位corr=+0.162(有意)。粗い地域単位では若い親世代と出生直後人口の関係が強く見えるが、市町村単位ではかなり弱まる。
+- `similar`が0件だったため、全21件が逆転または大きさの変化として`results/summary_table.csv`（id=5687〜5707）に記録済み。詳細は`results/summaries/id5687_5707_italy_istat_population_age_pairwise.csv`、経緯は`results/aggregation_effect_log.md`の該当項を参照。
