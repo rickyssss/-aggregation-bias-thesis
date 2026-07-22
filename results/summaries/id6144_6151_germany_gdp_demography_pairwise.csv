@@ -1,0 +1,9 @@
+variable,coarse_level,coarse_stat,fine_level,fine_stat,diff_type,coarse_sig,fine_sig
+gdp_per_capita_eur vs total_dependency_ratio_per1000,nuts2(n=38),corr=-0.751,nuts3(n=400),corr=-0.59,similar,yes,yes
+gdp_per_capita_eur vs old_age_dependency_ratio_per1000,nuts2(n=38),corr=-0.738,nuts3(n=400),corr=-0.523,similar,yes,yes
+gdp_per_capita_eur vs youth_dependency_ratio_per1000,nuts2(n=38),corr=-0.001,nuts3(n=400),corr=-0.319,similar,no,yes
+gdp_per_capita_eur vs median_age_years,nuts2(n=38),corr=-0.747,nuts3(n=400),corr=-0.604,similar,yes,yes
+gdp_per_capita_eur vs females_per1000_males,nuts2(n=38),corr=-0.091,nuts3(n=400),corr=-0.018,magnitude_change,no,no
+gdp_per_capita_eur vs young_0_14_per1000,nuts2(n=38),corr=0.545,nuts3(n=400),corr=0.009,magnitude_change,yes,no
+gdp_per_capita_eur vs elderly_65plus_per1000,nuts2(n=38),corr=-0.754,nuts3(n=400),corr=-0.516,magnitude_change,yes,yes
+gdp_per_capita_eur vs oldest_80plus_per1000,nuts2(n=38),corr=-0.583,nuts3(n=400),corr=-0.303,magnitude_change,yes,yes
