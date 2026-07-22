@@ -539,3 +539,11 @@
 - **注目例3（フランス国籍者比率 vs スペイン国籍者比率）**: 州単位corr=0.793(有意) → 市区町村単位corr=0.457(有意)、正の関係を保ったまま強さが約4割縮小。
 - **注目例4（イタリア国籍者比率 vs コソボ国籍者比率）**: 州単位corr=-0.037(有意でない) → 市区町村単位corr=0.178(有意)、州単位ではノイズに埋もれていた関係が市区町村単位で検出可能に。
 - `similar`と判定された全件も含め`results/summary_table.csv`（id=5599〜5613）に記録済み。詳細は`results/summaries/id5599_5613_switzerland_nationality_pairwise.csv`、経緯は`results/aggregation_effect_log.md`の該当項を参照。
+
+## 2026-07-22: スウェーデンSCB人口構成 45組み合わせの内訳（reversed/magnitude_change/similarすべて記録）
+
+- **reversed（符号逆転）**: 1件 / **magnitude_change（大きさが大きく変化）**: 26件 / **similar（ほぼ同様）**: 18件（合計45件）。逆転・非逆転を問わず全件を記録。
+- **注目例（0〜17歳人口比率 vs 未婚者比率）**: lan(県、21単位)単位corr=-0.261(有意でない) → kommun(市町村、290単位)単位corr=+0.129(有意)、弱い相関だが符号が逆転。県単位では平均化されて見えにくい関係が、市町村単位ではサンプル数の多さによって検出された例。
+- **大きさが縮小した例（18〜64歳人口比率 vs 人口増減率）**: lan単位corr=+0.790(有意) → kommun単位corr=+0.521(有意)。働く年齢層が多い地域ほど人口が増えやすい関係は残るが、県単位では関係が強めに見える。
+- **大きさがほぼ消えた例（男性比率 vs 離婚者比率）**: lan単位corr=-0.455(有意) → kommun単位corr=-0.051(有意でない)。県単位で見えていた関係が、市町村単位ではほぼ無関係になった。
+- `similar`と判定された全件も含め`results/summary_table.csv`（id=5614〜5658）に記録済み。詳細は`results/summaries/id5614_5658_sweden_scb_population_pairwise.csv`、経緯は`results/aggregation_effect_log.md`の該当項を参照。
