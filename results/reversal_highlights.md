@@ -515,3 +515,11 @@
 - **大きさが縮小した例（空き家(住宅)比率 vs 別荘比率）**: county単位corr=0.607(有意) → ED単位corr=0.19(有意)、正の関係を保ったまま強さが約7割縮小。
 - **頑健(similar)だった例（空き家(住宅)比率 vs 空き家率(%)）**: county単位corr=1.0 → ED単位corr=1.0、両者は定義上ほぼ同一の統計量なので内部整合性の確認として妥当な結果。
 - `similar`と判定された全件も含め`results/summary_table.csv`（id=5548〜5562）に記録済み。詳細は`results/summaries/id5548_5562_ireland_cso_pairwise.csv`、経緯は`results/aggregation_effect_log.md`の該当項を参照。
+
+## 2026-07-22: スイスFSO/BFS(国籍構成拡張) 21組み合わせの内訳（reversedは0件、magnitude_change/similarはすべて記録）
+
+- **reversed（符号逆転）**: 0件 / **magnitude_change（大きさが大きく変化）**: 6件 / **similar（ほぼ同様）**: 15件（合計21件）。今回は符号逆転は見られなかったが、指示通り逆転の有無にかかわらず全件を記録。
+- **注目例1（スイス国籍比率 vs 非定住人口比率）**: 州(26単位)単位corr=-0.121(有意でない) → 市区町村(2131単位)単位corr=-0.323(有意)。符号は同じ(負)だが、州単位ではノイズに埋もれていた弱い関係が市区町村単位で統計的に検出可能になった。
+- **注目例2（非定住人口比率 vs スイス国籍女性比率）**: 州単位corr=-0.105(有意でない) → 市区町村単位corr=-0.357(有意)、大きさが3倍以上に拡大し有意性も新たに現れた。
+- **頑健(similar)だった例（スイス国籍比率 vs 外国籍比率）**: 州単位corr=-0.995(有意) → 市区町村単位corr=-0.982(有意)、定義上ほぼ完全な負の相関を保ち内部整合性の確認として妥当。
+- `similar`と判定された全件も含め`results/summary_table.csv`（id=5563〜5583）に記録済み。詳細は`results/summaries/id5563_5583_switzerland_citizenship_pairwise.csv`、経緯は`results/aggregation_effect_log.md`の該当項を参照。

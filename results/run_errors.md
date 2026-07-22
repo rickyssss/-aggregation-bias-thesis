@@ -30,3 +30,12 @@
 - 併せてアイルランドCSO PxStat API(`https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadCollection/en`)を再試行したが、引き続きHTTP 500 InternalServerErrorだった。
 - **対応**: ベルギー・アイルランドともに今回は見送り、代わりにスイス連邦統計局(FSO/BFS)のPxWeb API(`www.pxweb.bfs.admin.ch`)が正常に動作したため、そちらを採用した(canton州 vs commune市区町村、詳細は`results/aggregation_effect_log.md`参照)。
 - **今後の課題**: ベルギーは、ヘッドレスブラウザ(Playwright)経由でのダウンロードや、bestat APIの中に隠れている市区町村単位の生データテーブル(views一覧に出ないもの)がないか、Statbelの別のAPIエンドポイント(例えば `https://statbel.fgov.be/en/open-data` のsitemap的なJSON API)を探すこと。アイルランドは時間を置いてさらに再試行するか、CSO Data and Information HubのAPI (`https://data.cso.ie/`) など別のエンドポイントを試すこと。
+
+## 2026-07-22: アイルランドCSOの他Profileにcounty/ED両対応表なし、代わりにスイスFSO/BFSの既存API拡張で成功
+
+- **状況**: 前回引き継ぎに沿って、アイルランドCSOの他のCensus 2022テーマでcounty(県・市)表とElectoral Division表のペアを探した。
+  - Profile 1「人口分布」データページ(`https://www.cso.ie/en/releasesandpublications/ep/p-cpp1/censusofpopulation2022profile1-populationdistributionandmovements/data/`)を確認したところ、Electoral Division単位の表(F1011人口密度・面積、F1018出生地)は存在するが、同一項目をcounty単位で報告する対応表が見当たらなかった。
+  - Profile 3「世帯・家族・保育」データページ(`https://www.cso.ie/en/releasesandpublications/ep/p-cpp3/censusofpopulation2022profile3-householdsfamiliesandchildcare/data/`)にはcounty単位の表(F3050・F3064・F3083)はあるが、Electoral Division単位の表が見当たらなかった。
+  - Profile 2「住宅」(既存で使用済みのF2015/F2095以外の表: F2003・F2004・F2010・F2014・F2020・F2023B・F2035・F2060)はいずれもcounty/county and cityレベル止まりで、Electoral Division単位の表は既存のF2095以外に見当たらなかった。
+- **対応**: アイルランドの新規county/EDペアは今回は見送り、代わりに前回引き継ぎ事項の「スイスFSO/BFSの他の指標(国籍構成など)の追加」を実施した。既存のスイス人口構成データ(id=5272〜5547)と同じ地理次元を持つ別表`px-x-0102010000_101`(国籍構成・滞在資格)を新規に使用し、canton(州)26単位・commune(市区町村)2131単位で7変数・21組を追加した(id=5563〜5583、詳細は`results/aggregation_effect_log.md`参照)。
+- **今後の課題**: アイルランドはCensus 2022の他のProfile(4以降: 移民・言語・宗教・教育・雇用・健康など)でElectoral Division単位の表がないか、CSO Small Area Population Statistics (SAPS)経由での再探索を検討すること。ベルギー・ドイツ・チェコ・イタリアは引き続き未解決(詳細は過去のエントリ参照)。スイスは他にも出生地・言語・宗教・失業率などの表が同じ地理次元(`Kanton (-) / Bezirk (>>) / Gemeinde (......)`)で利用可能な可能性が高く、次回以降も追加候補として有望。

@@ -1,0 +1,22 @@
+variable,coarse_level,coarse_stat,fine_level,fine_stat,diff_type,coarse_sig,fine_sig
+swiss_per1000 vs foreign_per1000,canton(n=26),corr=-0.995,commune(n=2131),corr=-0.982,similar,yes,yes
+swiss_per1000 vs nonpermanent_per1000,canton(n=26),corr=-0.121,commune(n=2131),corr=-0.323,magnitude_change,no,yes
+swiss_per1000 vs foreign_male_per1000,canton(n=26),corr=-0.994,commune(n=2131),corr=-0.976,similar,yes,yes
+swiss_per1000 vs foreign_female_per1000,canton(n=26),corr=-0.991,commune(n=2131),corr=-0.965,similar,yes,yes
+swiss_per1000 vs swiss_male_per1000,canton(n=26),corr=0.992,commune(n=2131),corr=0.966,similar,yes,yes
+swiss_per1000 vs swiss_female_per1000,canton(n=26),corr=0.987,commune(n=2131),corr=0.958,similar,yes,yes
+foreign_per1000 vs nonpermanent_per1000,canton(n=26),corr=0.02,commune(n=2131),corr=0.138,magnitude_change,no,yes
+foreign_per1000 vs foreign_male_per1000,canton(n=26),corr=0.998,commune(n=2131),corr=0.99,similar,yes,yes
+foreign_per1000 vs foreign_female_per1000,canton(n=26),corr=0.998,commune(n=2131),corr=0.987,similar,yes,yes
+foreign_per1000 vs swiss_male_per1000,canton(n=26),corr=-0.986,commune(n=2131),corr=-0.957,similar,yes,yes
+foreign_per1000 vs swiss_female_per1000,canton(n=26),corr=-0.983,commune(n=2131),corr=-0.931,similar,yes,yes
+nonpermanent_per1000 vs foreign_male_per1000,canton(n=26),corr=0.038,commune(n=2131),corr=0.157,magnitude_change,no,yes
+nonpermanent_per1000 vs foreign_female_per1000,canton(n=26),corr=0.002,commune(n=2131),corr=0.114,magnitude_change,no,yes
+nonpermanent_per1000 vs swiss_male_per1000,canton(n=26),corr=-0.131,commune(n=2131),corr=-0.27,magnitude_change,no,yes
+nonpermanent_per1000 vs swiss_female_per1000,canton(n=26),corr=-0.105,commune(n=2131),corr=-0.357,magnitude_change,no,yes
+foreign_male_per1000 vs foreign_female_per1000,canton(n=26),corr=0.991,commune(n=2131),corr=0.954,similar,yes,yes
+foreign_male_per1000 vs swiss_male_per1000,canton(n=26),corr=-0.982,commune(n=2131),corr=-0.946,similar,yes,yes
+foreign_male_per1000 vs swiss_female_per1000,canton(n=26),corr=-0.988,commune(n=2131),corr=-0.93,similar,yes,yes
+foreign_female_per1000 vs swiss_male_per1000,canton(n=26),corr=-0.986,commune(n=2131),corr=-0.945,similar,yes,yes
+foreign_female_per1000 vs swiss_female_per1000,canton(n=26),corr=-0.974,commune(n=2131),corr=-0.909,similar,yes,yes
+swiss_male_per1000 vs swiss_female_per1000,canton(n=26),corr=0.958,commune(n=2131),corr=0.85,similar,yes,yes

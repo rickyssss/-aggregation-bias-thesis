@@ -689,3 +689,22 @@ id=29の処理後、`queue/candidate_pairs.csv`にstatus="pending"の行がな�
 ### 次回への引き継ぎ
 
 `queue/candidate_pairs.csv`のpending行は今回もありませんでした。次回セッションでは、ベルギー(Statbelのbestat API`https://bestat.statbel.fgov.be/bestat/api/views`は登録不要で応答するが、確認した限りではBelgium/region/province止まりの集計ビューが中心で市区町村(commune)単位のローデータは見当たらなかった。オープンデータのCSV/ZIPダウンロード(`https://statbel.fgov.be/sites/default/files/files/opendata/...`)はF5/TSPDのボット対策ページが返り、curlでは取得不可。ヘッドレスブラウザや別のUser-Agent/Cookie戦略での再試行が今後の課題)、アイルランドCSO(引き続きHTTP 500)、ドイツregionalstatistik(GENESIS-OnlineのPOST方式の確認)、チェコの正しいデータセットID探索、またはスイスの他の指標(国籍構成、出生地、失業率など)の追加を検討してください。
+
+## 2026-07-22（既存データ源の拡張：スイスFSO/BFS、国籍構成・滞在資格を追加）
+
+前回の引き継ぎ事項に沿って、まずアイルランドCSOの他のCensus 2022テーマ(Profile 1「人口分布」、Profile 3「世帯・家族」)でcounty表とElectoral Division表のペアを探しましたが、Profile 1にはElectoral Division単位の表(F1011人口密度、F1018出生地)はあるものの対応するcounty単位の同一項目表が存在せず、Profile 3にはcounty単位の表(F3050・F3064・F3083)はあってもElectoral Division単位の表が見当たりませんでした。既存のF2015/F2095(住宅)のような「同一項目を粗密両方の単位で報告している」ペアは他に見つからなかったため、この方向は今回は保留としました。
+
+代わりに、前回引き継いだ「スイスの他の指標(国籍構成など)の追加」を実施しました。既存のスイス人口構成データ(id=5272〜5547)と全く同じ地理次元(`Kanton (-) / Bezirk (>>) / Gemeinde (......)`、州26単位・市区町村2131単位)を持つFSO/BFSの別表「Permanent and non permanent resident population by Year, Canton/District/Commune, Population type, Citizenship (category), Sex and Age」(`px-x-0102010000_101`、登録不要PxWeb API)を新規に使用しました。
+
+- **変数**: 2024年の常住人口(定住+非定住)を分母として、スイス国籍・外国籍・非定住人口(定住資格を持たない人口)・外国籍男性・外国籍女性・スイス国籍男性・スイス国籍女性の合計7変数を人口1000人あたり比率に変換しました。
+- **結果**: 総当たり21組み合わせを計算しました。内訳は「reversed(符号逆転)」0件、「magnitude_change(大きさの変化)」6件、「similar(ほぼ同様)」15件で、逆転の有無にかかわらず全21件を`results/summary_table.csv`(id=5563〜5583)に記録しました。
+- **注目した例**:
+  - 「スイス国籍比率」と「非定住人口比率」: 州(26単位)単位ではcorr=-0.121(統計的に有意でない)なのに、市区町村(2131単位)単位まで細かく見るとcorr=-0.323(有意)に変わりました。州単位ではノイズに埋もれていた弱い負の関係が、市区町村単位のサンプル数増加によって統計的に検出可能になった例です。
+  - 「非定住人口比率」と「スイス国籍女性比率」も同様に、州単位corr=-0.105(有意でない) → 市区町村単位corr=-0.357(有意)と、負の関係の大きさが3倍以上に拡大し、有意性も新たに現れました。
+  - 頑健(similar)だった例として、「スイス国籍比率」と「外国籍比率」はcorr=-0.995(州)→-0.982(市区町村)とほぼ完全な負の相関を保ちました(定義上、両者は足すとほぼ1000になる関係のため当然の結果で、内部整合性の確認として有用です)。「外国籍比率」と「外国籍男性比率」もcorr=0.998→0.99とほぼ同じ強さでした。
+- **示唆**: 国籍構成そのもの(スイス国籍 vs 外国籍)は既存の人口構成データと同様、州単位・市区町村単位のどちらで見てもほぼ同じ強い相関を示す頑健な関係でした。一方、非定住人口(短期滞在者など)と国籍構成の関係は、州単位では弱くて有意でなかったものが、市区町村単位まで細かく見ると有意な負の相関として現れる、という「検出力の違いによる逆転(実際には符号自体は変わらず大きさが拡大)」パターンが目立ちました。これは、非定住人口が特定の少数の市区町村(短期滞在者向けの雇用が集中する地域など)に偏って分布しているため、州単位まで平均するとその偏りが薄まってしまう一方、市区町村単位まで見るとその局所的な偏りがはっきり表れることを示していると考えられます。
+- 使ったデータは`data/Switzerland/switzerland_bfs_citizenship_coarse_canton.csv`(26件)・`data/Switzerland/switzerland_bfs_citizenship_fine_commune.csv`(2131件)に保存しました。組み合わせ全件の詳細は`results/summaries/id5563_5583_switzerland_citizenship_pairwise.csv`にあります。
+
+### 次回への引き継ぎ
+
+`queue/candidate_pairs.csv`のpending行は今回もありませんでした。次回セッションでは、ベルギー(F5/TSPDボット対策の回避)、アイルランドCSO(引き続きHTTP 500、他のCensusテーマでのcounty/ED両対応表の再探索)、ドイツregionalstatistik(GENESIS-OnlineのPOST方式の確認)、チェコの正しいデータセットID探索、イタリアIstatData(再接続確認)、またはスイスFSO/BFSの他の指標(出生地・言語・宗教・失業率など、同じ地理次元を持つ別表)の追加を検討してください。
